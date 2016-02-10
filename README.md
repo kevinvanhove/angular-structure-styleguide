@@ -7,8 +7,8 @@ In most angular applications the complexity of the code grows fairly rapidely. O
 *The below image is a quick look at how the code will be structured using this schema.*
 ![Overview](https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/overview.png)
 
-![Overview](https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/overview2.png)
-
 ## modulePath, pagePath & scopePath
 
 text
+
+![Overview](https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/overview2.png)
