@@ -1,4 +1,4 @@
-# angular-structure-styleguide
+# Angular Structure Guide
 A style guide for structuring modular angular applications
 
 ## Quick intro
