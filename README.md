@@ -7,7 +7,7 @@ In most angular applications the complexity of the code grows fairly rapidely. H
 *The below image is a quick look at how the code will be structured using this schema.*
 ![Overview](https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/overview.png)
 
-## modulePath, pagePath & scopePath
+## applicationPath
 
 Combining the modulePath, pagePath and scopePath gives you the applicationPath. This allows you to document certain areas or locations in your app. It makes it also easier to send other developer to a certain location in your app... work in progress...
 
