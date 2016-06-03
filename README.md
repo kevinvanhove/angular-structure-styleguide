@@ -101,7 +101,7 @@ The view 'homepage.html' loads the controllers using ng-controller.
 </div>
 ```
 
-The controller are loaded in your index.html file
+The controllers are added in your index.html file
 
 ```html
 <body ng-app="app">
