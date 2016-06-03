@@ -15,6 +15,9 @@ To create a schema that works we first need to understand all the different angu
 
 In a view based development strategy, on navigating to a certain route, a html view loads with a controller that contains the code for that entire view. This is an angular development strategy that is not a recommendation though i see it in many applications, even very big applications. The problem is that as the view grows in complexity, the controller follows suite, making it difficult to maintain and expand this section of the application. 
 
+##### Code example
+The router loads the templateUrl and the controller, associating both the view with the controller.
+
 ```javascript
 (function() {
 	'use strict';
@@ -49,9 +52,6 @@ In a view based development strategy, on navigating to a certain route, a html v
 <img src="https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-controller-based-strategy.jpg" width="517">
 
 A controller based development strategy allows for better management of the JS code. You keep the 1 view but you split the code into many controllers and many files. Alltough still not a recommendation it is a big improvement over the view based development strategy. The route is loading just the HTML view and the controllers are added using declarative syntax in the HTML. This allows for many controllers to be associated with 1 view.
-
-##### Code example
-The router loads the templateUrl and the controller, associating both the view with the controller.
 
 ```javascript
 (function() {
