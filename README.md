@@ -101,6 +101,22 @@ The view 'homepage.html' loads the controllers using ng-controller.
 </div>
 ```
 
+The controller are loaded in your index.html file
+
+```html
+<body ng-app="app">
+
+	<!--some html code-->
+
+	<script src="app/app.js"></script>
+	<script src="app/router.js"></script>
+	<script src="app/homepage/homepageCtr.js"></script>
+	<script src="app/homepage/whatIsNewCtrl.js"></script>
+	<script src="app/homepage/TakeTheTourCtrl.js"></script>
+
+</body>
+```
+
 ### Component based
 > many views, many controllers
 
