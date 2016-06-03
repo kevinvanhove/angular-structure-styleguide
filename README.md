@@ -15,6 +15,11 @@ To create a schema that works we first need to understand all the different angu
 
 In a view based development strategy, on navigating to a certain route, a html view loads with a controller that contains the code for that entire view. This is an angular development strategy that is not a recommendation though i see it in many applications, even very big applications. The problem is that as the view grows in complexity, the controller follows suite, making it difficult to maintain and expand this section of the application. 
 
+```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
+
 ### Controller based
 > 1 view, many controllers
 
