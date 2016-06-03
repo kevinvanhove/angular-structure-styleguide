@@ -20,6 +20,7 @@ In a view based development strategy, on navigating to a certain route, a html v
 
 ### Controller based
 > 1 view, many controllers
+
 A controller based development strategy allows for better management of the JS code. You keep the 1 view but you split the code into many controllers and many files. Alltough still not a recommendation it is a big improvement over the view based development strategy. The route is loading just the HTML view and the controllers are added using declarative syntax in the HTML. This allows for many controllers to be associated with 1 view.
 
 ### Component based: many views, many controllers
