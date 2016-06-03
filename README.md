@@ -53,6 +53,9 @@ The router loads the templateUrl AND the controller.
 
 A controller based development strategy allows for better management of the JS code. You keep the 1 view but you split the code into many controllers and many files. Alltough still not a recommendation it is a big improvement over the view based development strategy. The route is loading just the HTML view and the controllers are added using declarative syntax in the HTML. This allows for many controllers to be associated with 1 view.
 
+##### Code example
+The router loads ONLY the view.
+
 ```javascript
 (function() {
 	'use strict';
@@ -76,6 +79,26 @@ A controller based development strategy allows for better management of the JS c
 	}
 
 })();
+```
+
+The view 'homepage.html' loads the controllers using ng-controller.
+
+```html
+<div ng-controller="homepageCtr as homeCtrl">
+
+	<div ng-controller="whatIsNewCtrl as newCtrl">
+
+		<!--some html code-->
+
+	</div>
+
+	<div ng-controller="TakeTheTourCtrl as tourCtrl">
+
+		<!--some html code-->
+
+	</div>
+
+</div>
 ```
 
 ### Component based
