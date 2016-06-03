@@ -4,7 +4,11 @@ A style guide for structuring angular applications
 ## Quick intro
 In most angular applications the complexity of the code grows fairly rapidly. Having no strategy leads to bulky controllers and fragmented components. One way to battle this is by splitting up code over multiple files, but it shouldn't end there. This paper answers the question '**where to put your code**' and introduces an architectual schema that is designed to eliminate code complexity.
 
-To create a schema that works we first need to understand all the different angular development strategies one can take.
+To create a schema that works we first need to understand all the different angular development strategies one can take. We can clearly define 3 development strategies:
+
+* View based strategy
+* Controller based strategy
+* Component based strategy
 
 ## Angular development strategies
 
