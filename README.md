@@ -161,8 +161,8 @@ A directive/component loads another directive
 ```html
 <homepage>
 
-	<what-is-new></what-is-new>
-	<take-the-tour></take-the-tour>
+	<whatisnew></whatisnew>
+	<takethetour></takethetour>
 
 </homepage>
 ```
