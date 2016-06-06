@@ -210,7 +210,7 @@ The directive/component definition attaches the controller and template to the h
 
 
 ## The component tree
-In a component based development strategy you create html tags. Just like <html> is the main tag, your application will have a main tag, for instance <app></app>. This <app> tag will contain your application modules, again as html tags, for instance <dashboard></dashboard> and in turn contain all other components. As such it's important to have a solid component tree design for your application. 
+In a component based development strategy you create html tags. Just like `<html>` is the main tag, your application will have a main tag, for instance <app></app>. This <app> tag will contain your application modules, again as html tags, for instance <dashboard></dashboard> and in turn contain all other components. As such it's important to have a solid component tree design for your application. 
 
 ### Component tree design
 This section will discuss a component tree design method by identifying modules, pages and scopes within an application.
