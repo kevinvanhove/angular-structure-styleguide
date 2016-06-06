@@ -158,7 +158,7 @@ The router loads the directive/component.
 
 A directive/component loads another directive
 
-```javascript
+```html
 <homepage>
 
 	<what-is-new></what-is-new>
