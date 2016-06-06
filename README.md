@@ -128,6 +128,32 @@ The controllers are added in your index.html file
 
 On top of improved management of the JS code, the component based development strategy will also allow for better management of the HTML code. This is the recommended development strategy in both angular 1 and angular 2. In angular 1 this can easily be achieved using angular directives/components. If you already applied the Controller based strategy, moving to the component based strategy is easy. You keep your controllers but move them over to an angular directive/component, creating a html tag. Each html tag will have only the HTML code associated with the controller. You now have many views and many controllers that are managed by angular directives/components. 
 
+```javascript
+(function() {
+	'use strict';
+
+	angular.module('app').config(route);
+	route.$inject = ['$routeProvider'];
+
+	function route($routeProvider) {
+
+		$routeProvider
+			.when('/', {
+				template: '<homepage></homepage>',
+			})
+			.when('/login/', {
+				template: '<login></login>',
+			})
+			.when('/about/contact', {
+				templateUrl: '<contact></contact>',
+			})
+
+	}
+
+})();
+```
+
+
 ## The component tree
 In a component based development strategy you create html tags. Just like <html> is the main tag, your application will have a main tag, for instance <app></app>. This <app> tag will contain your application modules, again as html tags, for instance <dashboard></dashboard> and in turn contain all other components. As such it's important to have a solid component tree design for your application. 
 
