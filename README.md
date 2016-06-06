@@ -177,6 +177,37 @@ A template of a directive/component contains normal html code but also loads oth
 </homepage>
 ```
 
+The directive/component definition attaches the controller and template to the html tag
+
+```javascript
+(function() {
+
+	'use strict';
+
+	angular.module('app').directive('homepage', homepage);
+	homepage.$inject = ['constantSettings'];
+
+	function homepage(settings) {
+
+		return {
+			restrict: 'E',
+			controllerAs: 'ctrl',
+			scope: {},
+			bindToController: true,
+			templateUrl: settings.path.components + 'homepage/homepage.tpl',
+			controller: controller
+		};
+
+		function controller() {
+
+			//directive code
+
+		}
+
+	}
+})();
+```
+
 
 ## The component tree
 In a component based development strategy you create html tags. Just like <html> is the main tag, your application will have a main tag, for instance <app></app>. This <app> tag will contain your application modules, again as html tags, for instance <dashboard></dashboard> and in turn contain all other components. As such it's important to have a solid component tree design for your application. 
