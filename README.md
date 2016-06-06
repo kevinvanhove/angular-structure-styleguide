@@ -216,7 +216,7 @@ This tag will contain your application modules, maybe a `<branding>` tag which c
 
 
 ### Component tree design
-Yes you have to think in html tags now. Your app will progress fast and you will need a solid component tree design in order to manage your growing library of html tags. This section will discuss the design of a component tree by identifying:
+Yes you have to think in html tags now. Your app will progress fast and you will need a solid component tree design in order to manage your growing library of html tags. This section will discuss the design of such a component tree by identifying:
 
 * modules
 * pages
