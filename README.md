@@ -156,7 +156,7 @@ The router loads the directive/component.
 })();
 ```
 
-A directive/component loads another directive
+A template of a directive/component contains normal html code but also loads other directives/components
 
 ```html
 <homepage>
