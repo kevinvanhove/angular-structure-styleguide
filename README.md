@@ -214,10 +214,9 @@ It's clear that we have to take the component based development strategy as our 
 
 This tag will contain your application modules, maybe a `<branding>` tag which could hold some pages, like a `<homepage>` or `<contact>` tag. Within those page tags you might find a section tag like `<tab-intro>` that in turn displays some other tags like `<what-is-new>` and  a `<take-the-tour>` tag.
 
-Yes you have to think in html tags now. Your app will progress fast and you will need a solid component tree design in order to manage your growing library of html tags.
 
 ### Component tree design
-This section will discuss the design of a component tree by identifying:
+Yes you have to think in html tags now. Your app will progress fast and you will need a solid component tree design in order to manage your growing library of html tags. This section will discuss the design of a component tree by identifying:
 
 * modules
 * pages
