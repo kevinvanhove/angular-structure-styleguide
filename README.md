@@ -6,9 +6,9 @@ In most angular applications the complexity of the code grows fairly rapidly. Ha
 
 To create a schema that works we first need to understand all the different angular development strategies one can take. We can clearly define 3 development strategies:
 
-* View based strategy
-* Controller based strategy
-* Component based strategy
+* View based 
+* Controller based 
+* Component based 
 
 ## Angular development strategies
 
