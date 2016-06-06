@@ -148,7 +148,7 @@ The router loads the directive/component.
 				template: '<login></login>',
 			})
 			.when('/about/contact', {
-				templateUrl: '<contact></contact>',
+				template: '<contact></contact>',
 			})
 
 	}
@@ -156,7 +156,7 @@ The router loads the directive/component.
 })();
 ```
 
-A template of a directive/component contains normal html code but also loads other directives/components
+A template contains normal html code but also loads other directives/components
 
 ```html
 <homepage>
