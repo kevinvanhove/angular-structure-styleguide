@@ -162,8 +162,16 @@ A directive/component loads another directive
 <homepage>
 
 	<div class="row">
-		<div class="left"><what-is-new></what-is-new></div>
-		<div class="right"><take-the-tour></take-the-tour></div>
+		<div class="left">
+			
+			<what-is-new></what-is-new>
+			
+		</div>
+		<div class="right">
+			
+			<take-the-tour></take-the-tour>
+			
+		</div>
 	</div>
 
 </homepage>
