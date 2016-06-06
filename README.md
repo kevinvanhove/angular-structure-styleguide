@@ -128,6 +128,9 @@ The controllers are added in your index.html file
 
 On top of improved management of the JS code, the component based development strategy will also allow for better management of the HTML code. This is the recommended development strategy in both angular 1 and angular 2. In angular 1 this can easily be achieved using angular directives/components. If you already applied the Controller based strategy, moving to the component based strategy is easy. You keep your controllers but move them over to an angular directive/component, creating a html tag. Each html tag will have only the HTML code associated with the controller. You now have many views and many controllers that are managed by angular directives/components. 
 
+##### Code examples
+The router loads the directives.
+
 ```javascript
 (function() {
 	'use strict';
