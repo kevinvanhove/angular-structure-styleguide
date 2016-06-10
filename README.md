@@ -1,4 +1,4 @@
-# Angular Structure Guide
+# Angular Allegro
 A style guide for structuring angular applications
 
 ## Quick intro
