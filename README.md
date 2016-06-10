@@ -222,17 +222,53 @@ Yes you have to think in html tags now. Your app will progress fast and you will
 
 * modules
 * pages
-* sections
 * parts
 
 ### Identifying modules
+* An application should have at least 1 module
+* a module contains pages
 
 ### Identifying pages
-
-### Identifying sections
+* an application should have at least 1 page
+* a page contains parts
 
 ### Identifying parts
+* an application should have at least 1 part
 
+Yes, for a simple application you will have at least 4 components. So it's possible you end up with this simple structure:
+
+```html
+<app>
+	<module>
+		<page>
+			<part></part>
+		</page>
+	</module>
+</app>
+```
+
+or
+
+```html
+<app>
+	<book>
+		<homepage>
+			<video-of-book></video-of-book>
+		</homepage>
+	</book>
+</app>
+```
+or
+
+```html
+<sierra>
+	<hulpvraag>
+		<hulpvraag-detail>
+			<hv-status-overzicht></hv-status-overzicht>
+		</hulpvraag-detail>
+	</hulpvraag>
+</sierra>
+```
 
 
 *The below image is a quick look at how the code will be structured using this schema.*
