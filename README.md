@@ -235,7 +235,7 @@ Yes you have to think in html tags now. Your app will progress fast and you will
 ### Identifying parts
 * an application should have at least 1 part
 
-Yes, for a simple application you will have at least 4 components. So it's possible you end up with this simple single page application:
+Yes, for a simple application you will have at least 4 components. So it's possible you end up with this simple structure:
 
 ```html
 <app>
