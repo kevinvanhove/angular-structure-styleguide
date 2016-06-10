@@ -1,5 +1,6 @@
 # Angular Allegro
 A style guide for structuring angular applications
+
 Working Draft - Version 0.1
 
 ## Quick intro
