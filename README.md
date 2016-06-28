@@ -379,18 +379,11 @@ function setupVideo(videoType){
 
 
 
-##### Component documentation
-
-
-##### Function documentation
-
-
-
 ### Implementation
 
 #### Initialization
-#### Events
-#### Logic
+#### Registering events
+#### Component business logic
 
 
 
