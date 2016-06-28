@@ -284,6 +284,8 @@ A component consists of 2 main parts, the documentation and the implementation. 
   * Events published by the controller
   * The business logic
 
+##### Code example
+
 ```javascript
 (function () {
   'use strict';
