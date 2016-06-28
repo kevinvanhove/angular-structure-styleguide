@@ -392,7 +392,7 @@ When reviewing a component you need to be able to instantly identify how the com
 
 Then we call the functions that initialize the component when it loads, these are called the **constructor callbacks**, and show how the component starts and flows.
 
-##### Controller
+##### Code example
 ```javascript
 
   function controller(){
@@ -408,7 +408,7 @@ Then we call the functions that initialize the component when it loads, these ar
   }
 
 ```
-##### Template
+
 ```html
 
   <h3>{{$ctrl.videoTitle}}</h3>
