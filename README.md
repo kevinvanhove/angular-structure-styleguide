@@ -332,7 +332,28 @@ A component consists of 2 main parts, the documentation and the implementation. 
 
 ```
 
-### Documentation
+### Documenting a component
+Since a component should have a single responsibility within your application, it should also be easy to document one. First we write documentation at the very top of the component. This explains the global functionality of the component, what it is, how it works and to what module it belongs. Next, for each important function, include documentation in your function at the very top.
+
+The Angular Project uses [ngDocs](https://github.com/angular/angular.js/wiki/Writing-AngularJS-Documentation), a form of [jsdoc](http://usejsdoc.org/) for all of its documentation. We recommend using that as it exposes some angular specific [block and inline tags](https://github.com/angular/angular.js/wiki/Writing-AngularJS-Documentation#angularjs-specific-ngdoc-directives).
+
+##### Component documentation
+
+```javascript
+/**
+ * @ngdoc component
+ * @name moduleName.component:videoOfBook
+ *
+ * @description <video-of-book> component, description of this component.
+ */
+
+
+(function () {}());
+
+```
+##### Function documentation
+
+
 
 ### Implementation
 
