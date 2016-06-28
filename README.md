@@ -350,6 +350,53 @@ Since a component should have a single responsibility within your application, i
 
 Next, for each important function, include documentation in your function at the very top.
 
+```javascript
+/**
+ * @ngdoc component
+ * @name moduleName.component:videoOfBook
+ *
+ * @description <video-of-book> component, description of this component.
+ */
+
+
+(function () {
+  'use strict';
+
+  angular.module('app').component('videoOfBook', {...});
+
+  controller.$inject = [''];
+  function controller(){
+
+    var $ctrl = this;
+
+    setupVideo();
+
+    /****************************************************************/
+
+    function setupVideo(){
+/**
+ * @ngdoc factory
+ * @name get
+ * @methodOf hulpvraag.factory:moduleExplorer
+ *
+ * @description Haal het scopePath object (.ui, .data, .build) op van een bepaalde pagePath (page, section, part). Dit laat toe om snel en makkelijk toegang te krijgen tot
+ * alle scopePath objecten van de applicatie, bv. om het starten van een ui.reloadDomeinenGrid() in een bepaald deel van de app.
+ *
+ * @param {pagePath} key Een identifier string van een bepaalde pagePath, bv 'detail.status.domeinen' (page.section.part)
+ * @returns {object} Geeft een reference terug naar het scopePath object (.ui, .data, .build)
+
+ * @example moduleExplorer.get('detail.status.domeinen').ui.reloadDomeinenGrid()
+ */
+
+     
+    }
+
+  }
+
+}());
+
+```
+
 The Angular Project uses [ngDocs](https://github.com/angular/angular.js/wiki/Writing-AngularJS-Documentation), a form of [jsdoc](http://usejsdoc.org/) for all of its documentation. We recommend using that as it exposes some angular specific [block and inline tags](https://github.com/angular/angular.js/wiki/Writing-AngularJS-Documentation#angularjs-specific-ngdoc-directives).
 
 ##### Component documentation
