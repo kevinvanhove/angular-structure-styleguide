@@ -279,8 +279,9 @@ Readability and maintainability of a component are 2 of the drivers that lead to
 A component consists of these main parts
 * Documentation
 * Implementation
-** Initialization
-** 
+ * Initialization
+ * Events
+ * Logic
 
 
 
