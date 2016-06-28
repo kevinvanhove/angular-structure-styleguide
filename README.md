@@ -275,7 +275,7 @@ Readability and maintainability of a component are 2 of the drivers that lead to
 
 ![Overview](https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-component-structure.jpg)
 
-A component consists of 2 main parts, the *documentation* and the *implementation*. Within the implementation we can further distinguish 3 different code sections. Initialization code, component event registrations and finally all other component business logic:
+A component consists of 2 main parts, the **documentation** and the **implementation**. Within the implementation we can further distinguish 3 different code sections. Initialization code, component event registrations and finally all other component business logic:
 
 ##### Code example
 
