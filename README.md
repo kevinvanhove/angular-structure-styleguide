@@ -388,9 +388,9 @@ The implementation of the component is of course where all the action happens. T
 
 When reviewing a component you need to be able to instantly identify how the component will behave. This is done by knowing how it maintains state and by knowing how it starts. 
 
-Modeling the state of the component is done first. We assign the invocation context of the controller function to the view model `$ctrl` (we use `$ctrl` here because angular 1.5 also uses `$ctrl` as the `controllerAs` value) and we define the local state variables. 
+**Modeling state** of the component is done first. We assign the invocation context of the controller function to the view model `$ctrl` (we use `$ctrl` here because angular 1.5 also uses `$ctrl` as the `controllerAs` value) and we define the local state variables. 
 
-Then we call the functions that initialize the component when it loads, these are called the constructor callbacks, and show how the component starts and flows.
+Then we call the functions that initialize the component when it loads, these are called the **constructor callbacks**, and show how the component starts and flows.
 
 ##### Controller
 ```javascript
