@@ -388,27 +388,18 @@ The implementation of the component is of course where all the action happens. T
 
 ##### Code example
 ```javascript
-(function () {
-  'use strict';
 
-  angular.module('app').component('videoOfBook', {
-    bindings: {},
-    templateUrl: 'template.html',
-    controller: controller
-  });
-
-  controller.$inject = [''];
   function controller(){
 
+    //local state
     var $ctrl = this;
     var localStateVariable;
 
+    //constructor callbacks
     setupVideo();
     getPreferences();
 
   }
-
-}());
 
 ```
 
