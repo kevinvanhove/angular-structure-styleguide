@@ -273,11 +273,6 @@ or
 ## Structure of a component
 Readability and maintainability of a component are 2 of the drivers that lead to the propositions in this section. Closely following John Papa's excellent [angular style guide](https://github.com/johnpapa/angular-styleguide) we now dive deeper and look at how we can structure the different code layers that make up a component.
 
-### Overview
-![Overview](https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-component-structure.jpg)
-
-A component consists of 2 main parts, the documentation and the implementation. Within the implementation we can further distinguish 3 different code sections. Initialization code, component event registrations and finally all other component business logic:
-
 ##### Component organization
 
 * Documentation
@@ -285,6 +280,12 @@ A component consists of 2 main parts, the documentation and the implementation. 
   * Initialization of the component
   * Events published by the controller
   * The business logic
+
+### Overview
+![Overview](https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-component-structure.jpg)
+
+A component consists of 2 main parts, the documentation and the implementation. Within the implementation we can further distinguish 3 different code sections. Initialization code, component event registrations and finally all other component business logic:
+
 
 ##### Code example
 
