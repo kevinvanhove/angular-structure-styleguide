@@ -271,12 +271,16 @@ or
 ```
 
 ## Structure of a component
-Readability and maintainability of a component are 2 of the drivers that lead to the propositions in this section. Closely following John Papa's excellent [angular style guide](https://github.com/johnpapa/angular-styleguide) we now dive deeper and look at how we can structure the different code layers that make up component.
+Readability and maintainability of a component are 2 of the drivers that lead to the propositions in this section. Closely following John Papa's excellent [angular style guide](https://github.com/johnpapa/angular-styleguide) we now dive deeper and look at how we can structure the different code layers that make up a component.
 
-### overview
+### Overview
 ![Overview](https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-component-structure.jpg)
 
-
+A component consists of these main parts
+* Documentation
+* Implementation
+** Initialization
+** 
 
 
 
@@ -292,6 +296,7 @@ Readability and maintainability of a component are 2 of the drivers that lead to
 Combining the modulePath, pagePath and scopePath gives you the applicationPath. This allows you to document certain areas or locations in your app. It makes it also easier to send other developer to a certain location in your app... work in progress...
 
 ![Overview](https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/overview2.png)
+
 
 
 
