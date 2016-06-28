@@ -348,7 +348,7 @@ Since a component should have a single responsibility within your application, i
 
 ```
 
-Next, for each important function in your component, include documentation at the very top.
+Next, for each important function in your component, include documentation at the top of the function.
 
 ```javascript
 function setupVideo(videoType){
