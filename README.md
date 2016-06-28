@@ -306,7 +306,7 @@ A component consists of 2 main parts, the documentation and the implementation. 
     var $ctrl = this;
     var localStateVariable;
 
-    setupViewModel();
+    setupVideo();
     getPreferences();
 
     /****************************************************************/
@@ -316,7 +316,7 @@ A component consists of 2 main parts, the documentation and the implementation. 
 
     /****************************************************************/
 
-    function setupViewModel(){}
+    function setupVideo(){}
     function getPreferences(){}
 
     function loadListOfVideos(){}
