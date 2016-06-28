@@ -332,6 +332,8 @@ A component consists of 2 main parts, the documentation and the implementation. 
 
 ```
 
+![Overview](https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-component-structure-example.jpg)
+
 ### Documenting a component
 Since a component should have a single responsibility within your application, it should also be easy to document one. The Angular Project uses [ngDoc](https://github.com/angular/angular.js/wiki/Writing-AngularJS-Documentation), a form of [jsdoc](http://usejsdoc.org/) for all of its documentation. We recommend using that as it exposes some angular specific [block and inline tags](https://github.com/angular/angular.js/wiki/Writing-AngularJS-Documentation#angularjs-specific-ngdoc-directives).
 
