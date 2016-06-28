@@ -386,6 +386,31 @@ The implementation of the component is of course where all the action happens. T
 #### Initialization code
 ![Overview](https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-component-initialization.jpg)
 
+##### Code example
+(function () {
+  'use strict';
+
+  angular.module('app').component('videoOfBook', {
+    bindings: {},
+    templateUrl: 'template.html',
+    controller: controller
+  });
+
+  controller.$inject = [''];
+  function controller(){
+
+    var $ctrl = this;
+    var localStateVariable;
+
+    setupVideo();
+    getPreferences();
+
+  }
+
+}());
+
+```
+
 #### Event handlers
 ![Overview](https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-component-events.jpg)
 
