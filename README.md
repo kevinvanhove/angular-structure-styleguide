@@ -332,7 +332,7 @@ A component consists of 2 main parts, the documentation and the implementation. 
 ##### Visual example
 ![Overview](https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-component-structure-example.jpg)
 
-### 1: Documenting a component
+### Documenting a component
 Since a component should have a single responsibility within your application, it should also be easy to document one. The Angular Project uses [ngDoc](https://github.com/angular/angular.js/wiki/Writing-AngularJS-Documentation), a form of [jsdoc](http://usejsdoc.org/) for all of its documentation. We recommend using that as it exposes some angular specific [block and inline tags](https://github.com/angular/angular.js/wiki/Writing-AngularJS-Documentation#angularjs-specific-ngdoc-directives).
 
 First we write documentation at the very top of the component. This explains the global functionality of the component, what it is, how it works and to what module it belongs. 
@@ -375,7 +375,7 @@ function setupVideo(videoType){
 
 
 
-### 2: Implementing component details
+### Implementing component details
 
 #### Initialization
 #### Registering events
