@@ -278,6 +278,8 @@ Readability and maintainability of a component are 2 of the drivers that lead to
 
 A component consists of 2 main parts, the documentation and the implementation. Within the implementation we can further distinguish 3 different code sections. Initialization code, component event registrations and finally all other component business logic:
 
+##### Component organization
+
 * Documentation
 * Implementation
   * Initialization of the component
