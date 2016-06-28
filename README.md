@@ -273,15 +273,11 @@ or
 ## Structure of a component
 Readability and maintainability of a component are 2 of the drivers that lead to the propositions in this section. Closely following John Papa's excellent [angular style guide](https://github.com/johnpapa/angular-styleguide) we now dive deeper and look at how we can structure the different code layers that make up a component.
 
-
-### Overview
 ![Overview](https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-component-structure.jpg)
 
 A component consists of 2 main parts, the documentation and the implementation. Within the implementation we can further distinguish 3 different code sections. Initialization code, component event registrations and finally all other component business logic:
 
-
 ##### Code example
-
 
 ```javascript
 /**
@@ -336,7 +332,7 @@ A component consists of 2 main parts, the documentation and the implementation. 
 ##### Visual example
 ![Overview](https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-component-structure-example.jpg)
 
-### Documenting a component
+### 1: Documenting a component
 Since a component should have a single responsibility within your application, it should also be easy to document one. The Angular Project uses [ngDoc](https://github.com/angular/angular.js/wiki/Writing-AngularJS-Documentation), a form of [jsdoc](http://usejsdoc.org/) for all of its documentation. We recommend using that as it exposes some angular specific [block and inline tags](https://github.com/angular/angular.js/wiki/Writing-AngularJS-Documentation#angularjs-specific-ngdoc-directives).
 
 First we write documentation at the very top of the component. This explains the global functionality of the component, what it is, how it works and to what module it belongs. 
@@ -379,11 +375,11 @@ function setupVideo(videoType){
 
 
 
-### Implementation
+### 2: Implementing component details
 
 #### Initialization
 #### Registering events
-#### Component business logic
+#### Writing business logic
 
 
 
