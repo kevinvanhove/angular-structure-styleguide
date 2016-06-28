@@ -351,14 +351,6 @@ Since a component should have a single responsibility within your application, i
 Next, for each important function, include documentation in your function at the very top.
 
 ```javascript
-/**
- * @ngdoc component
- * @name moduleName.component:videoOfBook
- *
- * @description <video-of-book> component, description of this component.
- */
-
-
 (function () {
   'use strict';
 
