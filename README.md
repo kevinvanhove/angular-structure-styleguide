@@ -283,6 +283,14 @@ A component consists of 2 main parts, the documentation and the implementation. 
 ##### Code example
 
 ```javascript
+/**
+ * @ngdoc component
+ * @name moduleName.component:videoOfBook
+ *
+ * @description <video-of-book> component, description of this component.
+ */
+
+
 (function () {
   'use strict';
 
@@ -321,6 +329,7 @@ A component consists of 2 main parts, the documentation and the implementation. 
   }
 
 }());
+
 ```
 
 ### Documentation
