@@ -270,7 +270,7 @@ or
 </sierra>
 ```
 
-## Structure of a component
+## Architecture of a component
 Readability and maintainability of a component are 2 of the drivers that lead to the propositions in this section. Closely following John Papa's excellent [angular style guide](https://github.com/johnpapa/angular-styleguide) we now dive deeper and look at how we can structure the different code layers that make up a component.
 
 ![Overview](https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-component-structure.jpg)
