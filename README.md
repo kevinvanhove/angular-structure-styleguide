@@ -276,13 +276,54 @@ Readability and maintainability of a component are 2 of the drivers that lead to
 ### Overview
 ![Overview](https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-component-structure.jpg)
 
-A component consists of 2 main parts, the documentation and the implementation. Within the implementation we can further distinguish 3 different kinds of implementations. Initialization code, component event registrations and finally all other component business logic:
+A component consists of 2 main parts, the documentation and the implementation. Within the implementation we can further distinguish 3 different code sections. Initialization code, component event registrations and finally all other component business logic:
 
 * Documentation
 * Implementation
   * Initialization of the component
   * Events published by the controller
   * The business logic
+
+```javascript
+(function () {
+  'use strict';
+
+  angular.module('app').component('videoOfBook', {
+    bindings: {},
+    templateUrl: 'template.html',
+    controller: controller
+  });
+
+  controller.$inject = [''];
+  function controller(){
+
+    var $ctrl = this;
+    var localStateVariable;
+
+    setupViewModel();
+    getPreferences();
+
+    /****************************************************************/
+
+    $ctrl.ui.pauze = pauzeVideo;
+    $ctrl.ui.next = nextVideo;
+
+    /****************************************************************/
+
+    function setupViewModel(){}
+    function getPreferences(){}
+
+    function loadListOfVideos(){}
+    function prepareList(){}
+    function checkAudioQuality(){}
+
+    function pauzeVideo(){}
+    function nextVideo(){}
+
+  }
+
+}());
+```
 
 ### Documentation
 
