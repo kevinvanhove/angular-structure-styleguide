@@ -282,56 +282,6 @@ A component consists of 2 main parts, the documentation and the implementation. 
 
 ##### Code example
 
-```javascript
-/**
- * @ngdoc component
- * @name moduleName.component:videoOfBook
- *
- * @description <video-of-book> component, description of this component.
- */
-
-
-(function () {
-  'use strict';
-
-  angular.module('app').component('videoOfBook', {
-    bindings: {},
-    templateUrl: 'template.html',
-    controller: controller
-  });
-
-  controller.$inject = [''];
-  function controller(){
-
-    var $ctrl = this;
-    var localStateVariable;
-
-    setupVideo();
-    getPreferences();
-
-    /****************************************************************/
-
-    $ctrl.ui.pauze = pauzeVideo;
-    $ctrl.ui.next = nextVideo;
-
-    /****************************************************************/
-
-    function setupVideo(){}
-    function getPreferences(){}
-
-    function loadListOfVideos(){}
-    function prepareList(){}
-    function checkAudioQuality(){}
-
-    function pauzeVideo(){}
-    function nextVideo(){}
-
-  }
-
-}());
-
-```
-
 ![Overview](https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-component-structure-example.jpg)
 
 ### Documenting a component
@@ -416,4 +366,53 @@ app > management > dashboard > home > status > users > data.users.logedInUsers
 
 
 
+```javascript
+/**
+ * @ngdoc component
+ * @name moduleName.component:videoOfBook
+ *
+ * @description <video-of-book> component, description of this component.
+ */
+
+
+(function () {
+  'use strict';
+
+  angular.module('app').component('videoOfBook', {
+    bindings: {},
+    templateUrl: 'template.html',
+    controller: controller
+  });
+
+  controller.$inject = [''];
+  function controller(){
+
+    var $ctrl = this;
+    var localStateVariable;
+
+    setupVideo();
+    getPreferences();
+
+    /****************************************************************/
+
+    $ctrl.ui.pauze = pauzeVideo;
+    $ctrl.ui.next = nextVideo;
+
+    /****************************************************************/
+
+    function setupVideo(){}
+    function getPreferences(){}
+
+    function loadListOfVideos(){}
+    function prepareList(){}
+    function checkAudioQuality(){}
+
+    function pauzeVideo(){}
+    function nextVideo(){}
+
+  }
+
+}());
+
+```
 
