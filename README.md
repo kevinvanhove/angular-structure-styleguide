@@ -386,7 +386,11 @@ The implementation of the component is of course where all the action happens. T
 #### Initialization code
 ![Overview](https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-component-initialization.jpg)
 
-When loading the component we may need to set some local variables for component state management. This includes assigning the invocation context of the controller function `this` to a view modal `$ctrl`. We use `$ctrl` here because angular 1.5 also uses `$ctrl` as the `controllerAs` value within the template. 
+When reviewing a component you need to be able to instantly identify how the component will behave. This is done by knowing how it maintains state and by knowing how it starts. 
+
+Modeling the state of the component is done first. We assign the invocation context of the controller function to the view modal `$ctrl` (we use `$ctrl` here because angular 1.5 also uses `$ctrl` as the `controllerAs` value) and we define the local state variables. 
+
+Then we call the functions that initialize the component when it loads, these are called the constructor callbacks, and shows how the component flows.
 
 ##### Controller
 ```javascript
