@@ -351,23 +351,20 @@ Since a component should have a single responsibility within your application, i
 Next, for each important function in your component, include documentation at the very top.
 
 ```javascript
-
-    function setupVideo(videoType){
-      /**
-      * @ngdoc function
-      * @name setupVideo
-      * @methodOf moduleName.component:videoOfBook
-      *
-      * @description We need to set up the video player first. Additional documentation about this function...
-      *
-      * @param {string} videoType You can set the type of video needed. If 'forLatest' is provided then it will show a different box design
-      * @returns {object} If needed, this function returns the video settings. 
-      *
-      * @example setupVideo('forLatest');
-      */
-     
-    }
-
+function setupVideo(videoType){
+   /**
+   * @ngdoc function
+   * @name setupVideo
+   * @methodOf moduleName.component:videoOfBook
+   *
+   * @description We need to set up the video player first. Additional documentation about this function...
+   *
+   * @param {string} videoType You can set the type of video needed. If 'forLatest' is provided then it will show a different box design
+   * @returns {object} If needed, this function returns the video settings. 
+   *
+   * @example setupVideo('forLatest');
+   */     
+}
 
 ```
 
