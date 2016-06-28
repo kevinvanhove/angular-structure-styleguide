@@ -399,7 +399,7 @@ Then we call the functions that initialize the component when it loads, these ar
 
     //local state
     var $ctrl = this;
-    var $ctrl.videoTitle = 'Video';
+    var localStateVariable;
 
     //constructor callbacks
     setupVideo();
