@@ -386,7 +386,9 @@ The implementation of the component is of course where all the action happens. T
 #### Initialization code
 ![Overview](https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-component-initialization.jpg)
 
-##### Code example
+When loading the component we may need to set some local variables for component state management. This includes assigning the invocation context of the controller function `this` to a view modal `$ctrl`. We use `$ctrl` here because angular 1.5 also uses `$ctrl` as the `controllerAs` value within the template. 
+
+##### Controller
 ```javascript
 
   function controller(){
@@ -400,6 +402,13 @@ The implementation of the component is of course where all the action happens. T
     getPreferences();
 
   }
+
+```
+##### Template
+```html
+
+  <h3>{{$ctrl.videoTitle}}</h3>
+  <div>...</div>
 
 ```
 
