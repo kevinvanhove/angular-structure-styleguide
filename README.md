@@ -387,6 +387,7 @@ The implementation of the component is of course where all the action happens. T
 ![Overview](https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-component-initialization.jpg)
 
 ##### Code example
+```javascript
 (function () {
   'use strict';
 
