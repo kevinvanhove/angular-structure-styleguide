@@ -387,7 +387,10 @@ The implementation of the component is of course where all the action happens. T
 ![Overview](https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-component-initialization.jpg)
 
 #### Event handlers
+![Overview](https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-component-events.jpg)
+
 #### Business logic
+![Overview](https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-component-logic.jpg)
 
 
 
