@@ -333,6 +333,7 @@ A component consists of 2 main parts, the documentation and the implementation. 
 
 ```
 
+##### Visual example
 ![Overview](https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-component-structure-example.jpg)
 
 ### Documenting a component
