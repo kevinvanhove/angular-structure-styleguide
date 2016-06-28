@@ -281,7 +281,6 @@ A component consists of 2 main parts, the documentation and the implementation. 
 * Documentation
 * Implementation
  1 Initialization of the component
-   * local state
  2 Events published by the controller
  3 The business logic
 
