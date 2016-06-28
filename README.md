@@ -351,19 +351,6 @@ Since a component should have a single responsibility within your application, i
 Next, for each important function in your component, include documentation at the very top.
 
 ```javascript
-(function () {
-  'use strict';
-
-  angular.module('app').component('videoOfBook', {...});
-
-  controller.$inject = [''];
-  function controller(){
-
-    var $ctrl = this;
-
-    setupVideo('forLatest');
-
-    /****************************************************************/
 
     function setupVideo(videoType){
       /**
@@ -381,9 +368,6 @@ Next, for each important function in your component, include documentation at th
      
     }
 
-  }
-
-}());
 
 ```
 
