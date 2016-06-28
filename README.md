@@ -270,13 +270,21 @@ or
 </sierra>
 ```
 
+## Structure of a component
+Readability and maintainability of a component are 2 of the drivers that lead to propositions in this section. Closely following John Papa's excellent angular style guide we now dive deeper and look at how we can structure the actual code layers inside a component.
+
+![Overview](https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-component-structure.jpg)
+
+
+
+
 
 *The below image is a quick look at how the code will be structured using this schema.*
 ![Overview](https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/overview.png)
 
 
 *test*
-![Overview](https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-component-structure.jpg)
+
 
 ## applicationPath
 
