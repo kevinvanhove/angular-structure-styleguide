@@ -364,6 +364,9 @@ function setupVideo(videoType){
    *
    * @example setupVideo('forLatest');
    */     
+
+   var variableForFunction = '';
+
 }
 
 ```
