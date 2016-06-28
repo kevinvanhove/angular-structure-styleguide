@@ -377,9 +377,15 @@ function setupVideo(videoType){
 
 ### Implementing component details
 
-#### Initialization
-#### Registering events
-#### Writing business logic
+The implementation of the component is of course where all the action happens. To make this readable and maintainable we need to differentiate sections or types of code and group them. Currently we can identify 3 different groups:
+
+* Initialization code 
+* Event handlers 
+* Business logic 
+
+#### Initialization code
+#### Event handlers
+#### Business logic
 
 
 
