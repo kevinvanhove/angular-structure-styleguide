@@ -369,25 +369,23 @@ Next, for each important function, include documentation in your function at the
 
     var $ctrl = this;
 
-    setupVideo();
+    setupVideo('forLatest');
 
     /****************************************************************/
 
-    function setupVideo(){
-/**
- * @ngdoc factory
- * @name get
- * @methodOf hulpvraag.factory:moduleExplorer
- *
- * @description Haal het scopePath object (.ui, .data, .build) op van een bepaalde pagePath (page, section, part). Dit laat toe om snel en makkelijk toegang te krijgen tot
- * alle scopePath objecten van de applicatie, bv. om het starten van een ui.reloadDomeinenGrid() in een bepaald deel van de app.
- *
- * @param {pagePath} key Een identifier string van een bepaalde pagePath, bv 'detail.status.domeinen' (page.section.part)
- * @returns {object} Geeft een reference terug naar het scopePath object (.ui, .data, .build)
-
- * @example moduleExplorer.get('detail.status.domeinen').ui.reloadDomeinenGrid()
- */
-
+    function setupVideo(videoType){
+      /**
+      * @ngdoc function
+      * @name setupVideo
+      * @methodOf moduleName.component:videoOfBook
+      *
+      * @description We need to set up the video player first. Additional documentation about this function...
+      *
+      * @param {string} videoType You can set the type of video needed. If 'forLatest' is provided then it will show a different box design
+      * @returns {object} If needed, this function returns the video settings. 
+      *
+      * @example setupVideo('forLatest');
+      */
      
     }
 
