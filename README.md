@@ -390,7 +390,7 @@ When reviewing a component you need to be able to instantly identify how the com
 
 Modeling the state of the component is done first. We assign the invocation context of the controller function to the view model `$ctrl` (we use `$ctrl` here because angular 1.5 also uses `$ctrl` as the `controllerAs` value) and we define the local state variables. 
 
-Then we call the functions that initialize the component when it loads, these are called the constructor callbacks, and shows how the component flows.
+Then we call the functions that initialize the component when it loads, these are called the constructor callbacks, and show how the component starts and flows.
 
 ##### Controller
 ```javascript
