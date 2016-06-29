@@ -442,7 +442,7 @@ Assign business logic functions to the **public template pointers**, as seen bel
 #### Business logic
 ![Overview](https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-component-logic.jpg)
 
-In this layer of the component we encapsulate the internals of the component. This includes calling factories and services, performing $http requests, creating helper functions, manipulate DOM, setting up $watches, using angular's 1.5 component life cycle hooks, working with promises, etc...
+In this layer of the component we encapsulate the **internals** of the component. This includes calling factories and services, performing $http requests, creating helper functions, manipulate DOM, setting up $watches, using angular's 1.5 component life cycle hooks, working with promises, etc...
 
 Try to work with **factories and services** as much as possible to reduce the size of your component controllers and to improve the communications between components by sharing code and state.
 
