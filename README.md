@@ -448,7 +448,7 @@ Try to work with **factories and services** as much as possible to reduce the si
 
 Write functions defined as **function declarations** over function expressions. Function declarations are hoisted to the top so there are no concerns over using a function before it is defined. Order is critical with function expressions.
 
-Adopt simple functional programming styles. Always be on the lookout for creating small, repeatable actions that can be abstracted out into a function.
+Adopt simple **functional programming styles**. Always be on the lookout for creating small, repeatable actions that can be abstracted out into a function.
 
 ```javascript
 
