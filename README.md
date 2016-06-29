@@ -421,7 +421,7 @@ Then we call the functions that initialize the component when it loads, these ar
 
 User actions result in a flow of data from the template to the component controller. It should be clear, when inspecting the controller, where those user actions are and what they do. Event handlers should therefore be placed as close to the top of the controller.
 
-Assign functions to the public template pointers, as seen below:
+Assign business logic functions to the public template pointers, as seen below:
 
 
 ```javascript
