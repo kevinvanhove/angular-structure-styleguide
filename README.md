@@ -419,9 +419,9 @@ Then we call the functions that initialize the component when it loads, these ar
 #### Event handlers
 ![Overview](https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-component-events.jpg)
 
-User actions result in a flow of data from the template to the component controller. It should be clear, when inspecting the controller, where those user actions are and what they do.
+User actions result in a flow of data from the template to the component controller. It should be clear, when inspecting the controller, where those user actions are and what they do. Event handlers should therefore be placed as close to the top of the controller.
 
-Event handlers should therefore be placed as close to the top of the controller.
+Assign functions to the public template pointers, as seen below:
 
 
 ##### Code example
