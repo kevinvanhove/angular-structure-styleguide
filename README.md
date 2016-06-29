@@ -432,6 +432,12 @@ Assign functions to the public template pointers, as seen below:
 
   }
 ```
+```html
+
+  <button ng-click="$ctrl.ui.pauze()">Pauze video</button>
+  <div>...</div>
+
+```
 
 #### Business logic
 ![Overview](https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-component-logic.jpg)
