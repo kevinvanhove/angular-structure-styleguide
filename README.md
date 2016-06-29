@@ -390,7 +390,7 @@ When reviewing a component you need to be able to instantly identify how the com
 
 **Modeling local state** of the component is done first. We assign the invocation context of the controller function to the view model `$ctrl` (we use `$ctrl` here because angular 1.5 also uses `$ctrl` as the `controllerAs` value) and we define the local state variables. 
 
-Then we call the functions that initialize the component when it loads, these are called the **constructor callbacks**, and show how the component starts and flows.
+Then we call the functions that initialize the component when it loads, these are called the **constructor callbacks**, and show you how the component starts and flows.
 
 ##### Code example
 ```javascript
@@ -418,6 +418,11 @@ Then we call the functions that initialize the component when it loads, these ar
 
 #### Event handlers
 ![Overview](https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-component-events.jpg)
+
+User actions result in a flow of data from the template to the component controller. It should be clear, when inspecting the controller, where those user actions are and what they do.
+
+Event handlers should therefore be placed as close to the top of the controller.
+
 
 ##### Code example
 
