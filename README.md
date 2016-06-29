@@ -392,7 +392,7 @@ When reviewing a component you need to be able to instantly identify how the com
 
 Then we call the functions that initialize the component when it loads, these are called the **constructor callbacks**, and show you how the component starts and flows.
 
-##### Code example
+
 ```javascript
 
   function controller(){
@@ -423,8 +423,6 @@ User actions result in a flow of data from the template to the component control
 
 Assign functions to the public template pointers, as seen below:
 
-
-##### Code example
 
 ```javascript
   function controller(){
