@@ -493,8 +493,9 @@ app > management > dashboard > home > status > users > data.users.logedInUsers
 
 ## things to write about
 * datamodel solutions
-* component communications
-* 
+* component communication
+* naming conventions
+* directory structure
 
 
 http://blog.mgechev.com/2015/03/02/immutability-in-angularjs-immutablejs/
