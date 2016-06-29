@@ -444,7 +444,11 @@ Assign business logic functions to the public template pointers, as seen below:
 
 In this section of the component we encapsulate the internals of the component. This includes calling factories and services, performing $http requests, creating helper functions, manipulate DOM, setting up $watches, using angular's 1.5 component life cycle hooks, working with promises, etc...
 
-Write functions defined as function declarations over function expressions. Function declarations are hoisted to the top so there are no concerns over using a function before it is defined. Order is critical with function expressions.
+Try to work with **factories and services** as much as possible to reduce the size of your component controllers and to improve the communications between components by sharing code and state.
+
+Write functions defined as **function declarations** over function expressions. Function declarations are hoisted to the top so there are no concerns over using a function before it is defined. Order is critical with function expressions.
+
+Adopt simple functional programming styles. Always be on the lookout for creating small, repeatable actions that can be abstracted out into a function.
 
 ```javascript
 
