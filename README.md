@@ -442,6 +442,10 @@ Assign business logic functions to the public template pointers, as seen below:
 #### Business logic
 ![Overview](https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-component-logic.jpg)
 
+In this section of the component we encapsulate the internals of the component. This includes calling factories and services, performing $http requests, creating helper functions, manipulate DOM, setting up $watches, using angular's 1.5 component life cycle hooks, working with promises, etc...
+
+Write functions in a functional programming style defined as function declarations over function expressions. Function declarations are hoisted so there are no concerns over using a function before it is defined, as order is critical with function expressions.
+
 ```javascript
 
   function controller(){
