@@ -442,7 +442,23 @@ Assign business logic functions to the public template pointers, as seen below:
 #### Business logic
 ![Overview](https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-component-logic.jpg)
 
+```javascript
 
+  function controller(){
+
+    function setupVideo(){}
+    function getPreferences(){}
+
+    function loadListOfVideos(){}
+    function prepareList(){}
+    function checkAudioQuality(){}
+
+    function pauzeVideo(){}
+    function nextVideo(){}
+
+  }
+
+```
 
 *The below image is a quick look at how the code will be structured using this schema.*
 ![Overview](https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/overview.png)
