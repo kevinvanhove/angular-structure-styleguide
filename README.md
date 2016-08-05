@@ -274,42 +274,6 @@ The image below shows an example of a local component tree (left side) and its r
 
 
 
-
-Yes, for a simple application you will have at least 4 components. So it's possible you end up with this simple structure:
-
-```html
-<app>
-	<module>
-		<page>
-			<part></part>
-		</page>
-	</module>
-</app>
-```
-
-or
-
-```html
-<app>
-	<book>
-		<homepage>
-			<video-of-book></video-of-book>
-		</homepage>
-	</book>
-</app>
-```
-or
-
-```html
-<sierra>
-	<hulpvraag>
-		<hulpvraag-detail>
-			<hv-status-overzicht></hv-status-overzicht>
-		</hulpvraag-detail>
-	</hulpvraag>
-</sierra>
-```
-
 ## Architecture of a component
 Readability and maintainability of a component are 2 of the drivers that lead to the propositions in this section. Closely following John Papa's excellent [angular style guide](https://github.com/johnpapa/angular-styleguide) we now dive deeper and look at how we architect the different code layers that make up a component.
 
