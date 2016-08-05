@@ -472,29 +472,8 @@ Adopt simple **functional programming styles**. Always be on the lookout for cre
 
 ```
 
-*The below image is a quick look at how the code will be structured using this schema.*
-![Overview](https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/overview.png)
-
-
-*test*
-
-
-## applicationPath
-
-Combining the modulePath, pagePath and scopePath gives you the applicationPath. This allows you to document certain areas or locations in your app. It makes it also easier to send other developer to a certain location in your app... work in progress...
-
-![Overview](https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/overview2.png)
-
-
-
-
-you can't just add code to a module, you need at least 1 page and 1 scope
-the goal of this is to get an applicationPath, down to the very lowest level
-app > management > dashboard > home > status > users > data.users.logedInUsers
-
-## things to write about
+## things to write about in next update
 * datamodel solutions
 * component communication
 * naming conventions
 * directory structure
-* 
