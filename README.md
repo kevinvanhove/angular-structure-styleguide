@@ -214,26 +214,33 @@ The directive/component definition attaches the controller and template to the h
 ## The component tree
 It's clear that we have to take the component based development strategy as our main development objective. In this strategy you create html tags. Just like `<html>` is the main tag, your application will have a main tag, for instance an `<app>` tag. 
 
-This tag will contain your application modules, maybe a `<branding>` tag which could hold some pages, like a `<homepage>` or `<contact>` tag. Within those page tags you might find some other tags like `<what-is-new>` and  a `<take-the-tour>` tag.
+This tag will contain other tags, maybe a `<branding>` tag which could hold some pages, like a `<homepage>` or `<contact>` tag. Within those pages you might find some other tags like `<what-is-new>` and  a `<take-the-tour>` tag. 
+
+All these tags within tags are angular 1 or 2 defined components and they make up the component tree of your application. Planning a component tree design is a first step in creating your application.
 
 
 ### Component tree design
 Yes you have to think in html tags now. Your app will progress fast and you will need a solid component tree design in order to manage your growing library of html tags. This section will discuss the design of such a component tree by identifying:
 
-* modules
-* pages
-* parts
+* Local components
+* Global components
 
-### Identifying modules
+### Local components
 * An application should have at least 1 module
 * a module contains pages
 
-### Identifying pages
+### Global components
 * an application should have at least 1 page
 * a page contains parts
 
-### Identifying parts
-* an application should have at least 1 part
+
+
+
+
+
+
+
+
 
 Yes, for a simple application you will have at least 4 components. So it's possible you end up with this simple structure:
 
@@ -488,14 +495,9 @@ you can't just add code to a module, you need at least 1 page and 1 scope
 the goal of this is to get an applicationPath, down to the very lowest level
 app > management > dashboard > home > status > users > data.users.logedInUsers
 
-
-
-
 ## things to write about
 * datamodel solutions
 * component communication
 * naming conventions
 * directory structure
-
-
-http://blog.mgechev.com/2015/03/02/immutability-in-angularjs-immutablejs/
+* 
