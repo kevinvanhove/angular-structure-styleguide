@@ -222,16 +222,43 @@ All these tags within tags are angular 1 or 2 defined components and they make u
 ### Component tree design
 Yes you have to think in html tags now. Your app will progress fast and you will need a solid component tree design in order to manage your growing library of html tags. This section will discuss the design of such a component tree by identifying:
 
-* Local components
 * Global components
-
-### Local components
-* An application should have at least 1 module
-* a module contains pages
+* Local components
 
 ### Global components
-* an application should have at least 1 page
-* a page contains parts
+Global components are the reusable bits and pieces of your application. You might have a global <video-of-book> component that just displays a video of your book along with a caption and a titel. Or you could have a global <buy-form> component that contains a form where people can buy your book. 
+
+### Local components
+A local component is part of your main application component tree design and encapsulate an individual page, section or part of your application. 
+
+```html
+<app> //local
+
+    <homepage> //local
+
+        <book> //local
+            <homepage-book-try></homepage-book-try> //local
+            <homepage-book-buy> //local
+                <buy-form></buy-form> //global
+            </homepage-book-buy>
+        </book>
+
+        <videos> //local
+            <homepage-videos-trailer> //local
+                <video-of-book></video-of-book> //global
+            </homepage-videos-trailer> //local
+            <homepage-videos-list></homepage-videos-list> //local
+        </videos>
+
+    </homepage>
+    
+    <contact> //local
+        <buy-form></buy-form> //global
+    </contact>
+
+    
+</app>
+```
 
 
 
