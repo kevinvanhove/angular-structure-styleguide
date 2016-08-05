@@ -233,6 +233,8 @@ A local component is part of your main application component tree and encapsulat
 
 <img src="https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-local-vs-global-components.jpg" width="607">
 
+##### Code example
+
 ```html
 <app> //local
 
