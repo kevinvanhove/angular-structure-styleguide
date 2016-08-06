@@ -266,6 +266,8 @@ The image below shows an example of a local component tree (left side) and its r
 </app>
 ```
 
+Your application should have only 1 local component tree starting with the root component, for instance your `<app>` tag. This single component tree will hold your complete application structure and is put together using a combination of local components and global components.
+
 
 
 
@@ -305,7 +307,7 @@ A component consists of 2 main parts, the **documentation** and the **implementa
   function controller(){
 
     var $ctrl = this;
-    var localStateVariable;
+    var localStateVariable`
 
     setupVideo();
     getPreferences();
