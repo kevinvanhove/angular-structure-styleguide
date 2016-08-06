@@ -309,7 +309,7 @@ A component consists of 2 main parts, the **documentation** and the **implementa
   function controller(){
 
     var $ctrl = this;
-    var localStateVariable`
+    var localStateVariable;
 
     setupVideo();
     getPreferences();
