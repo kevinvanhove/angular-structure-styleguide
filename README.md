@@ -235,6 +235,8 @@ The image below shows an example of a local component tree (left side) and its r
 
 <img src="https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-local-vs-global-components.jpg" width="607">
 
+Your application should have only 1 local component tree starting with the root component, for instance your `<app>` tag. This single component tree will hold your complete application structure and is put together using a combination of local components and global components.
+
 ##### Code example
 
 ```html
@@ -266,7 +268,7 @@ The image below shows an example of a local component tree (left side) and its r
 </app>
 ```
 
-Your application should have only 1 local component tree starting with the root component, for instance your `<app>` tag. This single component tree will hold your complete application structure and is put together using a combination of local components and global components.
+
 
 
 
