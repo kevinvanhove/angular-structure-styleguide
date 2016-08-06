@@ -231,7 +231,7 @@ Global components are the reusable bits and pieces of your application. You migh
 ### Local components
 A local component, for instance `<homepage>`, is part of your main application component tree and encapsulates individual **pages, sections or parts** of your application. A local component is not meant to be reusable like a global component. 
 
-The image below shows an example of a local component tree (left side) and its reusable global components (to the right). A code example is followed after the image.
+The image below shows an example of a local component tree (left side) and its reusable global components (to the right).
 
 <img src="https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-local-vs-global-components.jpg" width="607">
 
