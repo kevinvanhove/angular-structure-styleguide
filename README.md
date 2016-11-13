@@ -3,6 +3,8 @@ A style guide for structuring angular applications
 
 Working Draft - Version 0.1
 
+[Component Communications](#component_communications)
+
 ## Quick intro
 In most angular applications the complexity of the code grows fairly rapidly. Having no strategy leads to bulky controllers and fragmented components. One way to battle this is by splitting up code over multiple files, but it shouldn't end there. This paper answers the question '**where to put your code**' and introduces an architectual schema that is designed to eliminate code complexity.
 
@@ -476,7 +478,7 @@ Adopt simple **functional programming styles**. Always be on the lookout for cre
 
 ```
 
-## Component communications
+## Component communications <a name="component_communications"></a>
 There are 2 recommend approches for a tree of components to interact with each other. Using the **component require property** and the standard **angular service**. In most cases, using one over the other is just a matter of style but there are cases where you are left with only 1 option.
 
 Continuing our example of an app where you can buy a book. Let's say that, when arriving on the buy form page, you want to present the user a list of books they showed interest in. We know this information because they visited that books product page.
