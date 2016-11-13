@@ -495,7 +495,7 @@ A directive, and consequently a component, has a require property available on t
 This allows you to expose an api on a parent component and make available it's methods in any child component.
 
 #### Code examples
-Exposing the api methods, addBook() and getBooks() on the root component. These methods will be called to get a list of visited books and to add a new book to the list.
+Exposing the api methods, `addBook()` and `getBooks()` on the root component. These methods will be called to get a list of visited books and to add a new book to the list.
 
 ```javascript
 
