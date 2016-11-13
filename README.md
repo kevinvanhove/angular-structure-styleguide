@@ -7,7 +7,7 @@ Working Draft - Version 0.1
 2. [Angular development strategies](#angular_development_strategies)
 3. [The component tree](#the_component_tree)
 4. [Architecture of a component](#architecture_of_a_component)
-5. [Component Communications](#component_communications)
+5. [Component communications](#component_communications)
 
 <a name="quick_intro"></a>
 ## Quick intro
@@ -495,7 +495,7 @@ A directive, and consequently a component, has a require property available on t
 This allows you to expose an api on a parent component and make available it's methods to any child component.
 
 #### Code examples
-Exposing the api methods, `addBook()` and `getBooks()` on the root component. These methods will be called to get a list of visited books and to add a new book to the list.
+Exposing the api methods, `addBook()` and `getBooks()` on the controller of the root component. These methods will be called to get a list of visited books and to add a new book to the list.
 
 ```javascript
 
