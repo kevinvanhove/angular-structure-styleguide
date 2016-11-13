@@ -476,8 +476,20 @@ Adopt simple **functional programming styles**. Always be on the lookout for cre
 
 ```
 
+## Component communications
+There are 2 ways that a tree of components can interact with each other. Using the component require property and using a standard angular service. In most cases, using one over the other is just a matter of style but there are cases where you are left with only 1 option.
+
+Continuing our example of an app where you can buy a book. Let's say that, when arriving on the buy form page, you want to present the user a list of books they showed interest in. We know this information because they visited that books product page.
+
+### The require property
+A directive, and consequently a component, has a require property available on the definition object. Using this property and requiring another component will give you a reference to that components controller. 
+
+This allows you to expose an api on a parent component and make available it's methods in any child component.
+
+### An angular service
+...
+
 ## things to write about in next update
 * datamodel solutions
-* component communication
 * naming conventions
 * directory structure
