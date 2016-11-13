@@ -477,7 +477,7 @@ Adopt simple **functional programming styles**. Always be on the lookout for cre
 ```
 
 ## Component communications
-There are 2 ways that a tree of components can interact with each other. Using the component require property and using a standard angular service. In most cases, using one over the other is just a matter of style but there are cases where you are left with only 1 option.
+There are 2 recommend approches for a tree of components to interact with each other. Using the **component require property** and a standard **angular service**. In most cases, using one over the other is just a matter of style but there are cases where you are left with only 1 option.
 
 Continuing our example of an app where you can buy a book. Let's say that, when arriving on the buy form page, you want to present the user a list of books they showed interest in. We know this information because they visited that books product page.
 
@@ -485,6 +485,55 @@ Continuing our example of an app where you can buy a book. Let's say that, when 
 A directive, and consequently a component, has a require property available on the definition object. Using this property and requiring another component will give you a reference to that components controller. 
 
 This allows you to expose an api on a parent component and make available it's methods in any child component.
+
+**Exposing an api on the root component**
+```javascript
+
+/**
+ * @ngdoc component
+ * @name app.component:app
+ *
+ * @description The main application component.
+ */
+
+
+(function () {
+  'use strict';
+
+  angular.module('app').component('app', {
+    template: 'the book: <book></book>',
+    controller: controller
+  });
+
+  controller.$inject = [];
+  function controller(){
+
+    var $ctrl = this;
+    var booksWatched = ['LatestBook'];
+
+    /****************************************************************/
+
+    $ctrl.addBook = addBook;
+    $ctrl.getBooks = getBooks;
+
+    /****************************************************************/
+
+    function addBook(bookName){
+
+      booksWatched.push(bookName);
+
+    }
+    function getBooks(){
+
+      return booksWatched;
+
+    }
+
+  }
+
+}());
+
+```
 
 ### An angular service
 ...
