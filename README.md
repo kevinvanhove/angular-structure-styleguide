@@ -492,7 +492,7 @@ Continuing our example of an app where you can buy a book. Let's say that, when 
 ### The require property
 A directive, and consequently a component, has a require property available on the definition object. Using this property and requiring another component will give you a reference to that components controller. 
 
-This allows you to expose an api on a parent component and make available it's methods in any child component.
+This allows you to expose an api on a parent component and make available it's methods to any child component.
 
 #### Code examples
 Exposing the api methods, `addBook()` and `getBooks()` on the root component. These methods will be called to get a list of visited books and to add a new book to the list.
