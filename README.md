@@ -3,7 +3,9 @@ A style guide for structuring angular applications
 
 Working Draft - Version 0.1
 
-[Component Communications](#component_communications)
+* [Quick intro](#quick_intro)
+* [Angular development strategies](#angular_development_strategies)
+* [Component Communications](#component_communications)
 
 ## Quick intro
 In most angular applications the complexity of the code grows fairly rapidly. Having no strategy leads to bulky controllers and fragmented components. One way to battle this is by splitting up code over multiple files, but it shouldn't end there. This paper answers the question '**where to put your code**' and introduces an architectual schema that is designed to eliminate code complexity.
