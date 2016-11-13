@@ -5,8 +5,11 @@ Working Draft - Version 0.1
 
 1. [Quick intro](#quick_intro)
 2. [Angular development strategies](#angular_development_strategies)
-3. [Component Communications](#component_communications)
+3. [The component tree](#the_component_tree)
+4. [Architecture of a component](#architecture_of_a_component)
+5. [Component Communications](#component_communications)
 
+<a name="quick_intro"></a>
 ## Quick intro
 In most angular applications the complexity of the code grows fairly rapidly. Having no strategy leads to bulky controllers and fragmented components. One way to battle this is by splitting up code over multiple files, but it shouldn't end there. This paper answers the question '**where to put your code**' and introduces an architectual schema that is designed to eliminate code complexity.
 
@@ -16,6 +19,7 @@ To create a schema that works we first need to understand all the different angu
 * Controller based 
 * Component based 
 
+<a name="angular_development_strategies"></a>
 ## Angular development strategies
 
 ### View based
@@ -214,7 +218,7 @@ The directive/component definition attaches the controller and template to the h
 })();
 ```
 
-
+<a name="the_component_tree"></a>
 ## The component tree
 It's clear that we have to take the component based development strategy as our main development objective. In this strategy you create html tags. Just like `<html>` is the main tag, your application will have a main tag, for instance an `<app>` tag. 
 
@@ -281,7 +285,7 @@ Your application should have only 1 local component tree starting with the root 
 
 
 
-
+<a name="architecture_of_a_component"></a>
 ## Architecture of a component
 Readability and maintainability of a component are 2 of the drivers that lead to the propositions in this section. Closely following John Papa's excellent [angular style guide](https://github.com/johnpapa/angular-styleguide) we now dive deeper and look at how we architect the different code layers that make up a component.
 
