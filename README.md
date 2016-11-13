@@ -545,7 +545,7 @@ Exposing the api methods, `addBook()` and `getBooks()` on the controller of the 
 
 ```
 
-Requiring the `<app>`component, binding the controller to `$ctrl.api`and calling the method `$ctrl.api.addBook('ES6 - The Essentials');`.
+Requiring the root component using `require:{api: '^app'}`, binding the root controller and calling the method `$ctrl.api.addBook('ES6 - The Essentials');` to add a book to the `booksWatched` array in the root component.
 
 ```javascript
 
@@ -587,6 +587,53 @@ Requiring the `<app>`component, binding the controller to `$ctrl.api`and calling
       $ctrl.api.addBook('ES6 - The Essentials');
 
     }
+
+  }
+
+}());
+
+```
+
+Finally, `<buy-form>`component requires the root component and gets the list of watched books using the line `$ctrl.booksWatched = $ctrl.api.getBooks();` which is rendered to the user in the template `<ul><li ng-repeat="book in $ctrl.booksWatched">{{book}}</li></ul>`.
+
+```javascript
+
+/**
+ * @ngdoc component
+ * @name app.component:book
+ *
+ * @description The <buy-form> component.
+ */
+
+
+(function () {
+  'use strict';
+
+  angular.module('app').component('buyForm', {
+    require: {api: '^app'},
+    template: '<ul><li ng-repeat="book in $ctrl.booksWatched">{{book}}</li></ul>',
+    controller: controller
+  });
+
+  controller.$inject = [];
+  function controller(){
+
+    var $ctrl = this;
+
+    setupAngularHooks();
+
+    /****************************************************************/
+
+    function setupAngularHooks(){
+    	$ctrl.$onInit = function(){
+    		getWatchedBooks();
+    	}
+    }
+
+    function getWatchedBooks(){
+      $ctrl.booksWatched = $ctrl.api.getBooks();
+    }
+
 
   }
 
