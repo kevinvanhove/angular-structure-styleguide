@@ -545,6 +545,56 @@ Exposing the api methods, `addBook()` and `getBooks()` on the root component. Th
 
 ```
 
+Requiring the `<app>`component, binding the controller to `$ctrl.api`and calling the method `$ctrl.api.addBook('ES6 - The Essentials');`.
+
+```javascript
+
+/**
+ * @ngdoc component
+ * @name app.component:book
+ *
+ * @description The <book> component.
+ */
+
+
+(function () {
+  'use strict';
+
+  angular.module('app').component('book', {
+    bindings: {},
+    require: {api: '^app'},
+    template: 'Product page of the book: ES6 - The Essentials',
+    controller: controller
+  });
+
+  controller.$inject = [];
+  function controller(){
+
+    var $ctrl = this;
+
+    setupAngularHooks();
+
+    /****************************************************************/
+
+    function setupAngularHooks(){
+      $ctrl.$onInit = function(){
+        addThisBook();
+      }
+    }
+
+    function addThisBook(){
+
+      $ctrl.api.addBook('ES6 - The Essentials');
+
+    }
+
+  }
+
+}());
+
+```
+
+
 ### An angular service
 ...
 
