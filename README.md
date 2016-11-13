@@ -594,7 +594,7 @@ Requiring the root component using `require:{api: '^app'}`, binding the root con
 
 ```
 
-Finally, `<buy-form>`component requires the root component and gets the list of watched books using the line `$ctrl.booksWatched = $ctrl.api.getBooks();` which is rendered to the user in the template `<ul><li ng-repeat="book in $ctrl.booksWatched">{{book}}</li></ul>`.
+Finally, the `<buy-form>`component requires the root component and gets the list of watched books using the line `$ctrl.booksWatched = $ctrl.api.getBooks();` which is rendered to the user in the template `<ul><li ng-repeat="book in $ctrl.booksWatched">{{book}}</li></ul>`.
 
 ```javascript
 
