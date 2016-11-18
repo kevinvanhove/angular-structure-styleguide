@@ -494,7 +494,7 @@ A directive, and consequently a component, has a require property available on t
 
 <img src="https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-component-communications-require.png" width="360">
 
-This allows you to **expose an api** on a parent component and make available it's methods to any child component. The 'require' approach can only be used if you are 100% sure that all components are or will be part in the **same component tree**. If this is not the case than you are left with the 'angular service' approach.
+This allows you to **expose an api** on a parent component and make available it's methods to any child component. The 'require' approach can only be used if you are 100% sure that all components are or will be in the **same component tree**. If this is not the case than you are left with the 'angular service' approach.
 
 #### Code examples
 Exposing the api methods, `addBook()` and `getBooks()` on the controller of the `<app>` component. These methods will be called to get the list of visited books and to add a new book to the list.
