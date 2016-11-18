@@ -492,7 +492,7 @@ Continuing our example of an app where you can buy a book. Let's say that, when 
 ### The require property
 <img src="https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-component-communications-require.png" width="360">
 
-A directive, and consequently a component, has a require property available on the definition object. Using this property and requiring another component will give you a reference to that components controller. 
+A directive, and consequently a component, has a require property available on the definition object. Using this property and requiring another component will give you a reference to that components **controller**. 
 
 This allows you to expose an api on a parent component and make available it's methods to any child component.
 
