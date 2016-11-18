@@ -485,12 +485,10 @@ Adopt simple **functional programming styles**. Always be on the lookout for cre
 ```
 <a name="component_communications"></a>
 ## Component communications 
-There are 2 recommend approches for a tree of components to interact with each other. 
+There are 2 recommend approches for a tree of components to interact with each other. In most cases, using one over the other is just a matter of style but there are cases where you are left with only 1 option.
 
 * Using the **component require property** 
 * A standard **angular service**. 
-
-In most cases, using one over the other is just a matter of style but there are cases where you are left with only 1 option.
 
 Continuing our example of an app where you can buy a book. Let's say that, when arriving on the buy form page, you want to present the user a list of books they showed interest in. We know this information because they visited that books product page.
 
