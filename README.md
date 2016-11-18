@@ -490,11 +490,11 @@ There are 2 recommend approches for a tree of components to interact with each o
 Continuing our example of an app where you can buy a book. Let's say that, when arriving on the buy form page, you want to present the user a list of books they showed interest in. We know this information because they visited that books product page.
 
 ### The require property
-<img src="https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-component-communications-require.png" width="360">
-
 A directive, and consequently a component, has a require property available on the definition object. Using this property and requiring another component will give you a reference to that components **controller**. 
 
 This allows you to expose an api on a parent component and make available it's methods to any child component.
+
+<img src="https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-component-communications-require.png" width="360">
 
 #### Code examples
 Exposing the api methods, `addBook()` and `getBooks()` on the controller of the root component. These methods will be called to get a list of visited books and to add a new book to the list.
