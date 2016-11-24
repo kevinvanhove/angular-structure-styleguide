@@ -531,7 +531,7 @@ Exposing the api methods, `addBook()` and `getBooks()` on the controller of the 
     /****************************************************************/
 
     $ctrl.addWatchedBook = addWatchedBook;
-    $ctrl.getBooks = getBooks;
+    $ctrl.getWatchedBooks = getWatchedBooks;
 
     /****************************************************************/
 
