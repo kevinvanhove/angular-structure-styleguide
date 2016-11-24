@@ -8,6 +8,7 @@ Working Draft - Version 0.1
 3. [The component tree](#the_component_tree)
 4. [Architecture of a component](#architecture_of_a_component)
 5. [Component communications](#component_communications)
+6. [Datmodel solutions](#datamodel_solutions)
 
 <a name="quick_intro"></a>
 ## Quick intro
@@ -768,6 +769,10 @@ The `<buy-form>` component binds to the properties `book`, `promote-books` and `
 
 }());
 ```
+
+<a name="datamodel_solutions"></a>
+## Datamodel solutions 
+...
 
 ## things to write about in next update
 * datamodel solutions
