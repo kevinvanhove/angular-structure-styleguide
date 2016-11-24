@@ -650,7 +650,7 @@ The `<buy-form>`component also requires the `<app>` component and gets the list 
 
 
 ### Property binding (input/output)
-
+<img src="https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-component-input-output.png" width="516">
 ...
 
 ## things to write about in next update
