@@ -502,7 +502,7 @@ A directive, and consequently a component, has a require property available on t
 This allows you to **expose an api** on a parent component and make available it's methods to any child component. The 'require' approach can only be used if you are 100% sure that all components are or will be in the **same component tree**. Look at your dom structure to check this, all component html tags, for instance `<book>` should be inside your root component tag, like `<app>`.
 
 #### Code examples
-Exposing the api methods, `addBook()` and `getBooks()` on the controller of the `<app>` component. These methods will be called to get the list of visited books and to add a new book to the list.
+Exposing the api methods, `addWatchedBook()` and `getWatchedBooks()` on the controller of the `<app>` component. These methods will be called to get the list of visited books and to add a new book to the list.
 
 ```javascript
 
@@ -552,7 +552,7 @@ Exposing the api methods, `addBook()` and `getBooks()` on the controller of the 
 
 ```
 
-Require the `<app>` component using `require:{api: '^app'}`, this binds the components controller to `$ctrl.api`. Call the method `$ctrl.api.addBook('ES6 - The Essentials');` to add a book to the `booksWatched` array in the `<app>` component.
+Require the `<app>` component using `require:{api: '^app'}`, this binds the components controller to `$ctrl.api`. Call the method `$ctrl.api.addWatchedBook('ES6 - The Essentials');` to add a book to the `booksWatched` array in the `<app>` component.
 
 ```javascript
 
@@ -601,7 +601,7 @@ Require the `<app>` component using `require:{api: '^app'}`, this binds the comp
 
 ```
 
-The `<buy-form>`component also requires the `<app>` component and gets the list of watched books using the line `$ctrl.booksWatched = $ctrl.api.getBooks();`. The result is rendered to the user in the template `<ul><li ng-repeat="book in $ctrl.booksWatched">{{book}}</li></ul>`.
+The `<buy-form>`component also requires the `<app>` component and gets the list of watched books using the line `$ctrl.booksWatched = $ctrl.api.getWatchedBooks();`. The result is rendered to the user in the template `<ul><li ng-repeat="book in $ctrl.booksWatched">{{book}}</li></ul>`.
 
 ```javascript
 
