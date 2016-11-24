@@ -650,6 +650,12 @@ The `<buy-form>`component also requires the `<app>` component and gets the list 
 
 
 ### Property binding (input/output)
+In property binding, the registered component can receive data in (input) and send data out (output). The diagram below shows the `<buy-form>` component with 2 input properties and 1 output property:
+
+* input: `book="$ctrl.book"`
+* input: `promote-books="2"`
+* output: `on-buy="$ctrl.bookIsSold(book)"`
+
 <img src="https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-component-input-output.png" width="516">
 ...
 
