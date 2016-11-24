@@ -485,7 +485,7 @@ Adopt simple **functional programming styles**. Always be on the lookout for cre
 ```
 <a name="component_communications"></a>
 ## Component communications 
-There are 3 recommend approches for a tree of components to interact with each other, in most cases you should combine these methods.
+There are 2 recommend approches for a tree of components to interact with each other, in most cases you should combine these methods.
 
 * Using the **component require property** 
 * Through **property binding** (input/output)
