@@ -649,7 +649,7 @@ The `<buy-form>`component also requires the `<app>` component and gets the list 
 ```
 
 
-### property binding (input/output)
+### Property binding (input/output)
 
 ...
 
