@@ -657,7 +657,117 @@ In property binding, the registered component can receive data (input) and send 
 * output: `on-buy="$ctrl.bookIsSold(book)"`
 
 <img src="https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-component-input-output.png" width="516">
-...
+
+#### Code examples
+The template in the `<book>` component contains the `<buy-form>` component that will call the `$ctrl.bookIsSold(book)` function when the user buys a book.
+
+``` javascript
+
+/**
+ * @ngdoc component
+ * @name app.component:book
+ *
+ * @description The <book> component.
+ */
+
+
+(function () {
+  'use strict';
+
+  angular.module('app').component('book', {
+    bindings: {},
+    require: {api: '^app'},
+    template: '<h1>Book page</h1> <form-buy book="$ctrl.book" promote-books="2" on-buy="$ctrl.bookIsSold(book)"></form-buy>',
+    controller: controller
+  });
+
+  controller.$inject = [];
+  function controller(){
+
+    var $ctrl = this;
+
+    setupAngularHooks();
+
+    /****************************************************************/
+
+    $ctrl.bookIsSold = bookIsSold;
+
+    /****************************************************************/
+
+    function setupAngularHooks(){
+      $ctrl.$onInit = function(){
+        addThisBook();
+      }
+    }
+
+    function addThisBook(){
+      $ctrl.api.addWatchedBook('ES6 - The Essentials');
+    }
+
+    function bookIsSold(bookSold){
+      $ctrl.api.addSoldBook(bookSold);
+    }
+
+  }
+
+}());
+```
+
+The `<buy-form>` component binds to the properties `book`, `promote-books` and `on-buy` using the component definition object which makes them available in the controller. The function, registered in  `$ctrl.onBuy`, will be called when the user clicks on the button to buy the book.
+
+```javascript
+
+/**
+ * @ngdoc component
+ * @name app.component:book
+ *
+ * @description The <buy-form> component.
+ */
+
+
+(function () {
+  'use strict';
+
+  angular.module('app').component('buyForm', {
+    bindings: {book: '<', promoteBooks: '<?', onBuy: '&?'},
+    require: {api: '^app'},
+    template: '<h1>{{$ctrl.book.name}}</h1><ul><li ng-repeat="book in $ctrl.booksWatched | limitTo: $ctrl.promotoBooks">{{book}}</li></ul><button ng-click="$ctrl.buy()">Buy</button>',
+    controller: controller
+  });
+
+  controller.$inject = [];
+  function controller(){
+
+    var $ctrl = this;
+
+    setupAngularHooks();
+
+    /****************************************************************/
+
+    $ctrl.buy = buy;
+
+    /****************************************************************/
+
+    function setupAngularHooks(){
+      $ctrl.$onInit = function(){
+        getWatchedBooks();
+      }
+    }
+
+    function getWatchedBooks(){
+      $ctrl.booksWatched = $ctrl.api.getWatchedBooks();
+    }
+
+    function buy(){
+      //do the buy process, when the form returns, receive a 'bookSold' object
+      //pass the bookSold object to the function registered on the onBuy binding
+      $ctrl.onBuy({book: bookSold});
+    }
+
+  }
+
+}());
+```
 
 ## things to write about in next update
 * datamodel solutions
