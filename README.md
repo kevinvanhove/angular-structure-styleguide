@@ -485,12 +485,12 @@ Adopt simple **functional programming styles**. Always be on the lookout for cre
 ```
 <a name="component_communications"></a>
 ## Component communications 
-There are 2 recommend approches for a tree of components to interact with each other, in most cases you should combine these methods.
+There are 2 recommend approaches for a tree of components to interact with each other, in most cases you should combine these methods.
 
 * Using the **component require property** 
 * Through **property binding** (input/output)
 
-Of course there are more methods, like $broadcast, $emit and a standard angular service, but we will focus on the recommend approche for component based development.
+Of course there are more methods, like $broadcast, $emit and a standard angular service, but we will focus on the recommend approach for component based development.
 
 ### The require property
 Continuing our example of an app where you can buy a book. Let's say that, when arriving on the buy form page, you want to present the user a list of books they showed interest in. We know this information because they visited that books product page.
