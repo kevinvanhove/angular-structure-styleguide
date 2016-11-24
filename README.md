@@ -530,17 +530,17 @@ Exposing the api methods, `addBook()` and `getBooks()` on the controller of the 
 
     /****************************************************************/
 
-    $ctrl.addBook = addBook;
+    $ctrl.addWatchedBook = addWatchedBook;
     $ctrl.getBooks = getBooks;
 
     /****************************************************************/
 
-    function addBook(bookName){
+    function addWatchedBook(bookName){
 
       booksWatched.push(bookName);
 
     }
-    function getBooks(){
+    function getWatchedBooks(){
 
       return booksWatched;
 
@@ -591,7 +591,7 @@ Require the `<app>` component using `require:{api: '^app'}`, this binds the comp
 
     function addThisBook(){
 
-      $ctrl.api.addBook('ES6 - The Essentials');
+      $ctrl.api.addWatchedBook('ES6 - The Essentials');
 
     }
 
@@ -638,7 +638,7 @@ The `<buy-form>`component also requires the `<app>` component and gets the list 
     }
 
     function getWatchedBooks(){
-      $ctrl.booksWatched = $ctrl.api.getBooks();
+      $ctrl.booksWatched = $ctrl.api.getWatchedBooks();
     }
 
 
