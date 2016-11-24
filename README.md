@@ -649,7 +649,8 @@ The `<buy-form>`component also requires the `<app>` component and gets the list 
 ```
 
 
-### An angular service
+### property binding (input/output)
+
 ...
 
 ## things to write about in next update
