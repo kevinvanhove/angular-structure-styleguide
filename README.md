@@ -490,7 +490,7 @@ There are 2 recommend approches for a tree of components to interact with each o
 * Using the **component require property** 
 * Through **property binding** (input/output)
 
-Of course there are more methods, like $broadcast, $emit and a standard angular service, but we will focus on the recommend approches for component based development.
+Of course there are more methods, like $broadcast, $emit and a standard angular service, but we will focus on the recommend approche for component based development.
 
 Continuing our example of an app where you can buy a book. Let's say that, when arriving on the buy form page, you want to present the user a list of books they showed interest in. We know this information because they visited that books product page.
 
