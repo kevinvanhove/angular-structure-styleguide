@@ -651,7 +651,7 @@ The `<buy-form>`component also requires the `<app>` component and gets the list 
 
 
 ### Property binding (input/output)
-In property binding, the registered component can receive data (input) and send data (output). The diagram below shows the `<buy-form>` component with 2 input properties and 1 output property:
+In property binding, the registered component can **receive data** (input) and **send data** (output). The diagram below shows the `<buy-form>` component with 2 input properties and 1 output property:
 
 * input: `book="$ctrl.book"`
 * input: `promote-books="2"`
