@@ -788,31 +788,32 @@ Reusing these 3 folders (assets, collection & feature) whithin your directory st
 #### An example directory structure:
 ``` javascript
 
-app/modules/
-app/modules/[module]/
-app/modules/[module]/[component]/
-app/modules/[module]/[component]/[component].js
-app/modules/[module]/[component]/[component].html
-app/modules/[module]/[component]/[component].spec.js
 //app/[asset]/[collection]/[feature]/
+app/modules/
+app/modules/homepage/
+app/modules/homepage/book/
+app/modules/homepage/book/book.js
+app/modules/homepage/book/book.html
+app/modules/homepage/book/book.spec.js
 
+//app/[asset]/[collection]/
 app/models/
-app/models/[model]/
-app/models/[model]/[model].model.js
-app/models/[model]/[model].resource.js
-//app/[asset]/[collection]/
+app/models/book/
+app/models/book/book.model.js
+app/models/book/book.resource.js
 
+//app/[asset]/[collection]/
 app/components/
-app/components/[component]/
-app/components/[component]/[component].js
-app/components/[component]/[component].html
-app/components/[component]/[component].spec.js
-//app/[asset]/[collection]/
+app/components/buy-form/
+app/components/buy-form/buy-form.js
+app/components/buy-form/buy-form.html
+app/components/buy-form/buy-form.spec.js
 
+//app/[asset]/
 app/img/
 app/styles/
 app/configurations/
-//app/[asset]/
+
 
 ```
 
