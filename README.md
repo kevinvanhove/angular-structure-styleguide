@@ -8,7 +8,8 @@ Working Draft - Version 0.1
 3. [The component tree](#the_component_tree)
 4. [Architecture of a component](#architecture_of_a_component)
 5. [Component communications](#component_communications)
-6. [Datmodel solutions](#datamodel_solutions)
+6. [Directory structure](#directory_structure)
+7. [Datmodel solutions](#datamodel_solutions)
 
 <a name="quick_intro"></a>
 ## Quick intro
@@ -769,6 +770,41 @@ The `<buy-form>` component binds to the properties `book`, `promote-books` and `
 
 }());
 ```
+<a name="directory_structure"></a>
+## Directory structure 
+An application needs a consistant and scalable directory structure. If you start with a small application, in time your app may grow in complexity and you start doing 1 of 2 things. You either keep the initial folder structure or you refactor. If you choose the first option you end up with a hard to navigate application, choosing the latter option sets you up with a lot of extra work.
+
+The following proposal scales well, minimizes refactoring and is consistent throughout the applications life. The main directory is the `app/` directory which contains `assets` that have `features` that are grouped in `collections`.
+
+* app/[asset]/[collection]/[feature]/
+
+#### An example directory structure:
+``` javascript
+
+app/modules/
+app/modules/[module]/
+app/modules/[module]/[component]/
+app/modules/[module]/[component]/[component].js
+app/modules/[module]/[component]/[component].html
+app/modules/[module]/[component]/[component].spec.js
+
+app/models/
+app/models/[model]/
+app/models/[model]/[model].model.js
+app/models/[model]/[model].resource.js
+
+app/components/
+app/components/[component]/
+app/components/[component]/[component].js
+app/components/[component]/[component].html
+app/components/[component]/[component].spec.js
+
+app/img/
+app/styles/
+app/configurations/
+
+```
+
 
 <a name="datamodel_solutions"></a>
 ## Datamodel solutions 
