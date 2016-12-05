@@ -778,14 +778,18 @@ The following proposal scales well, minimizes refactoring and is consistent thro
 
 * app/[asset]/[collection]/[feature]/
 
-Reusing the 3 basic principles asset/collection/feature structure for  scales well to any folder depth.
+Using and mixing these 3 structure categories `[asset]`/`[collection]`/`[feature]` will make your application scale to any size and folder depth.
+
+* app/[asset]/
+* app/[asset]/[feature]/
+* app/[asset]/[collection]/[feature]/[asset]/[feature]/
 
 #### An example directory structure:
 ``` javascript
 
-app/modules/ /* app/[asset] */ 
-app/modules/[module]/ //app/[asset]/[collection]/
-app/modules/[module]/[component]/ // app/[asset]/[collection]/[feature]/
+app/modules/
+app/modules/[module]/
+app/modules/[module]/[component]/
 app/modules/[module]/[component]/[component].js
 app/modules/[module]/[component]/[component].html
 app/modules/[module]/[component]/[component].spec.js
