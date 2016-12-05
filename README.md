@@ -779,7 +779,7 @@ The following proposal scales well, minimizes refactoring and is consistent thro
 
 * app/[asset]/[collection]/[feature]/
 
-Reusing these 3 folders (assets, collection & feature) whithin your directory structure will make your application scale to any size and folder depth.
+Reusing these 3 folders (asset, collection & feature) whithin your directory structure will make your application scale to any size and folder depth.
 
 * app/[asset]/
 * app/[asset]/[feature]/
@@ -813,6 +813,9 @@ app/components/buy-form/buy-form.spec.js
 app/img/
 app/styles/
 app/configurations/
+
+//app/[asset]/[collection]/[feature]/[asset]/[feature]/
+app/components/video/video-of-book/models/for-print/print.model.js
 
 
 ```
