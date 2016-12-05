@@ -794,21 +794,25 @@ app/modules/[module]/[component]/
 app/modules/[module]/[component]/[component].js
 app/modules/[module]/[component]/[component].html
 app/modules/[module]/[component]/[component].spec.js
+//app/[asset]/[collection]/[feature]/
 
 app/models/
 app/models/[model]/
 app/models/[model]/[model].model.js
 app/models/[model]/[model].resource.js
+//app/[asset]/[collection]/
 
 app/components/
 app/components/[component]/
 app/components/[component]/[component].js
 app/components/[component]/[component].html
 app/components/[component]/[component].spec.js
+//app/[asset]/[collection]/
 
 app/img/
 app/styles/
 app/configurations/
+//app/[asset]/
 
 ```
 
