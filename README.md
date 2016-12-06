@@ -828,4 +828,3 @@ app/components/video/video-of-book/models/for-print/print.model.js
 ## things to write about in next update
 * datamodel solutions
 * naming conventions
-* directory structure
