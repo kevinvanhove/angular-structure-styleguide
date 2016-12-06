@@ -775,7 +775,7 @@ The `<buy-form>` component binds to the properties `book`, `promote-books` and `
 Applications need a consistant and scalable directory structure. Starting out with a small application, in time your app may grow becoming more complex. If you don't plan for this you could end up with a hard to navigate application or you will be set up with a lot of extra work.
 
 ### Assets, collections & features
-The following proposal should scale well, minimizes refactoring and stays consistent throughout the applications life. **The main directory is the `app/` directory which contains `assets` that have `features` that are grouped in `collections`.**
+The following proposal scales easily, minimizes refactoring and stays consistent throughout the applications life. **The main directory is the `app/` directory which contains `assets` that have `features` that are grouped in `collections`.**
 
 * app/[asset]/[collection]/[feature]/
 
