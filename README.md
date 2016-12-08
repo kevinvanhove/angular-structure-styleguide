@@ -779,7 +779,7 @@ The following proposal scales easily, minimizes refactoring and stays consistent
 
 * app/[asset]/[collection]/[feature]/
 
-Reusing these 3 folder types (asset, collection & feature) whithin your directory structure will make your application scale to any size and folder depth.
+Reusing these 3 folder types (asset, collection & feature) whithin your directory structure will make your application scale to any size and folder depth. 
 
 * app/[asset]/
 * app/[asset]/[feature]/
