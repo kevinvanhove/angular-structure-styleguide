@@ -1,8 +1,6 @@
 # Angular Structure Guide
 A style guide for structuring angular applications
 
-Version 1
-
 1. [Quick intro](#quick_intro)
 2. [Angular development strategies](#angular_development_strategies)
 3. [The component tree](#the_component_tree)
