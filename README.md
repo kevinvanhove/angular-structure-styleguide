@@ -858,9 +858,22 @@ While this construct of binding everything to 1 object works fine for smaller ap
 * A DataModel
 
 #### The ViewModel
+This model is everything the DataModel is not. In other words, everything that is not getting send to backend data store should be considerd the ViewModel. In the above example the controller logic and the event methods are the ViewModel. 
+
+The ViewModel is attached directly to the `$ctrl` object.
+``` html
+<div ng-if="$ctrl.accordeonIsOpen"> <!--controller logic-->
+<button ng-click="$ctrl.save()">Save form</button> <!--event method-->
+```
 
 #### The DataModel
+The DataModel holds the domain data that is transmitted to a backend data store. In the example above the form data is the DataModel.
 
+To separate the DataModel from the ViewModel we attach the domain data to the `$ctrl.data` property.
+``` html
+<input ng-model="$ctrl.data.name"> <!--form data-->
+<input ng-model="$ctrl.data.age"> <!--form data-->
+```
 ...
 
 ## things to write about in next update
