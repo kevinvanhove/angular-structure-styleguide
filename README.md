@@ -828,7 +828,7 @@ The lack of a datamodel can often lead to inadequate communications between clie
 * manage RESTful resources
 
 **Conceptual overview**
-<img src="https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-component-input-output.png" width="376">
+<img src="https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-datamodel.png" width="376">
 
 ### Separate datamodel from viewmodel
 
