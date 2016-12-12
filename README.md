@@ -832,7 +832,7 @@ The lack of structured datamodels and assisted tools can often lead to deficient
 <img src="https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-datamodel.png" width="376">
 
 ### Separate DataModel from ViewModel
-There is a lot of movement in an angular component view. **Controller logic** which manages controller and UI state, **event methods** that call functions in our controller, **form data** like input fields and checkboxes.
+There is a lot of movement in an angular component view. We have **Controller logic** which manages controller and UI state, **event methods** that call functions in our controller and **form data** like input fields and checkboxes.
 
 Angular makes no assumptions about these data flow types and binds everything to one controller scope object, in a component based architecture this defaults to the `$ctrl` object.
 
