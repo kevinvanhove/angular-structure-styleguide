@@ -821,7 +821,7 @@ app/components/video/video-of-book/models/for-print/print.model.js
 
 <a name="datamodel_solutions"></a>
 ## Datamodel solutions 
-The lack of a datamodel can often lead to inadequate communications between client and server. In angular there is no concept of a datamodel like in EmberJS or BackboneJS. To solve this we need to consider 3 actions:
+The lack of a datamodel can often lead to inadequate communication between client and server. In angular there is no concept of a datamodel like in EmberJS or BackboneJS. To solve this we need to consider 3 actions:
 
 * separate datamodel from viewmodel
 * create datamodels on the client
@@ -832,7 +832,17 @@ The lack of a datamodel can often lead to inadequate communications between clie
 <img src="https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-datamodel.png" width="376">
 
 ### Separate datamodel from viewmodel
-There is a lot of movement in an angular component view and we can clearly seperate 3 kinds of dataflow. **Controller logic** which manages controller and ui state, **event methods** that call functions in our controller and **form data** like input fields or checkboxes.
+There is a lot of movement in an angular component view. **Controller logic** which manages controller and ui state, **event methods** that call functions in our controller and **form data** like input fields or checkboxes.
+
+Allthough the template bindings all belong to the $ctrl object it is much better if we split them up into 2 models:
+
+* A ViewModel
+* A DataModel
+
+#### The ViewModel
+
+#### The DataModel
+
 ...
 
 ## things to write about in next update
