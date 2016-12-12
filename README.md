@@ -852,7 +852,7 @@ Angular makes no assumptions about these data flow types and binds everything to
 </div>
 ```
 
-While this construct works fine for small applications, bigger applications will need **more seperation**. We can do this by splitting up the `$ctrl` object into 2 models:
+While this construct of binding everything to 1 object works fine for smaller applications, bigger applications will need **more seperation**. We can do this by splitting up the `$ctrl` object into 2 models:
 
 * A ViewModel
 * A DataModel
