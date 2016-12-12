@@ -832,7 +832,7 @@ The lack of a datamodel can often lead to inadequate communications between clie
 <img src="https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-datamodel.png" width="376">
 
 ### Separate datamodel from viewmodel
-
+There is a lot of movement in an angular component view and we can clearly seperate 3 kinds of dataflow. **Controller logic** which manages controller and ui state, **event methods** that call functions in our controller and **form data** like input fields or checkboxes.
 ...
 
 ## things to write about in next update
