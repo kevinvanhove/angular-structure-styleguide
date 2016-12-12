@@ -837,19 +837,20 @@ There is a lot of movement in an angular component view. **Controller logic** wh
 Angular makes no assumptions about these data flow types and binds everything to one controller scope object, in a component based architecture this defaults to the `$ctrl` object.
 
 ``` html
-<div ng-if="$ctrl.hasHeader">
+<div ng-if="$ctrl.hasHeader"> <!--controller logic-->
 	...
 </div>
 
-<div ng-if="$ctrl.accordeonIsOpen">
+<div ng-if="$ctrl.accordeonIsOpen"> <!--controller logic-->
 	<form>
-		<input ng-model="$ctrl.name">
-		<input ng-model="$ctrl.age">
-		<button ng-click="$ctrl.save()">Save</button>
+		<input ng-model="$ctrl.name"> <!--form data-->
+		<input ng-model="$ctrl.age"> <!--form data-->
+		
+		<button ng-click="$ctrl.save()">Save</button> <!--event methods-->
 	</form>
 </div>
 
-<div ng-if="$ctrl.hasFooter">
+<div ng-if="$ctrl.hasFooter"> <!--controller logic-->
 	...
 </div>
 ```
