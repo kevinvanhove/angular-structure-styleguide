@@ -821,13 +821,13 @@ app/components/video/video-of-book/models/for-print/print.model.js
 
 <a name="datamodel_solutions"></a>
 ## Datamodel solutions 
-The lack of a datamodel can often lead to inadequate communication between client and server. In angular there is no concept of a datamodel like in EmberJS or BackboneJS. To solve this we need to consider 3 actions:
+The lack of structured datamodels and assisted tools can often lead to deficient communication between client and server. In angular there is no concept of a datamodel like in EmberJS or BackboneJS. To solve this we need to consider 3 actions:
 
 * separate datamodel from viewmodel
 * create datamodels on the client
 * manage RESTful resources
 
-**Conceptual overview**
+**Conceptual overview of the proposed solution**
 
 <img src="https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-datamodel.png" width="376">
 
