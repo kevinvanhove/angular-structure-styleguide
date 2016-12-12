@@ -846,12 +846,9 @@ Angular makes no assumptions about these data flow types and binds everything to
 		<input ng-model="$ctrl.name"> <!--form data-->
 		<input ng-model="$ctrl.age"> <!--form data-->
 		
-		<button ng-click="$ctrl.save()">Save</button> <!--event methods-->
+		<button ng-click="$ctrl.save()">Save form</button> <!--event methods-->
+		<button ng-click="$ctrl.reset()">Reset form</button> <!--event methods-->
 	</form>
-</div>
-
-<div ng-if="$ctrl.hasFooter"> <!--controller logic-->
-	...
 </div>
 ```
 
