@@ -880,6 +880,41 @@ Separating both DataModel and ViewModel allows for **better management** of data
 ### Create and maintain client-side DataModels
 Managing DataModels on the client-side is a good idea for several reasons. Not only does it fit well with the **single responsibility principle** it also further improves code cohesion by **loose coupling** the DataModel from the controller.
 
+**Example of a client-side DataModel
+```javascript
+
+/**
+ * @ngdoc factory
+ * @name models.factory:models.bankaccount.iban
+ *
+ * @description DataModel for an iban backaccount
+ *
+ */
+
+(function () {
+    'use strict';
+
+    angular.module('models').factory('models.bankaccount.iban', fctr);
+
+    fctr.$inject = [];
+
+    function fctr() {
+
+      function instance(){
+        this.bic = {};
+        this.foreign = false;
+        this.inUse = true;
+        this.accountNumber = '';
+        this.deleted = false;
+      }
+
+      return instance;
+
+    };
+
+}());
+```
+
 There are at least 3 reasons why you should consider creating and maintaining client-side DataModels. 
 
 1. **DataModels promote code re-use**: Any application that is focused on code quality should focus on code re-use. Clever architectual front-end design patterns that promote code re-use should be implemented as much as possible.
