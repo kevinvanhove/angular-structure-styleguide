@@ -914,29 +914,15 @@ Managing DataModels on the client-side is a good idea for several reasons. Not o
 
 }());
 ```
-A DataModel is a simple angular factory that returns a `constructor function` that you call with the `new` keyword. This creates a new object with the properties defined in the factory.
+A DataModel is a simple angular factory that returns a `constructor function` that you call with the `new` keyword. This creates a new object with the properties defined in the factory:
 
 ```javascript
-(function () {
-  'use strict';
-
-  angular.module('app').component('buy-form', {
-    controller: controller
-  });
-
-  controller.$inject = ['models.bankaccount.iban'];
-  function controller(ibanModel){
-
     var $ctrl = this;
   
     ...
 
     //further down in the code you need the instance of an iban bankaccount
     $ctrl.data.iban = new ibanModel();
-
-  }
-
-}());
 ```
 
 There are at least 3 reasons why you should consider creating and maintaining client-side DataModels. 
