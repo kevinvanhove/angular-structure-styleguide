@@ -959,8 +959,7 @@ A DataModel is a simple angular factory that returns a `constructor function` th
 ```
 
 ```javascript
-    var $ctrl = this;
-        //here you delete a customer
+      //here you delete a customer
       $ctrl.data  = Customer.get({id:'27'}, function(){
 
         $ctrl.data.$delete();
