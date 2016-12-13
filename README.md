@@ -934,6 +934,12 @@ A DataModel is a simple angular factory that returns a `constructor function` th
 ### 3. Manage RESTful resources using the $resource service
 ...
 
+
+```javascript
+      //assign a customer $resource object to Customer
+      Customer = new customerResource();
+```
+
 ```javascript
       //here you create a new customer
       $ctrl.data = new Customer(new customerModel());
