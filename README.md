@@ -858,7 +858,7 @@ While this construct of binding everything to 1 object works fine for smaller ap
 * A DataModel
 
 #### The ViewModel
-This model is everything the DataModel is not. In other words, everything that is not getting send to backend data store should be considerd the ViewModel. In the above example the controller logic and the event methods are the ViewModel. 
+This model is everything the DataModel is not. In other words, all properties that are not relevant for a backend data store should be considerd the ViewModel. In the above example the controller logic and the event methods are the ViewModel. 
 
 The ViewModel is attached directly to the `$ctrl` object.
 ``` html
@@ -875,7 +875,7 @@ To separate the DataModel from the ViewModel we attach the domain data to the `$
 <input ng-model="$ctrl.data.age"> <!--form data-->
 ```
 
-Separating both DataModel and ViewModel allows for better management of data flows within the component view and controller. There is no need to collect properties to create a postData object and it becomes easier to validate domain data.
+Separating both DataModel and ViewModel allows for better management of data flows within the component view. There is no need to collect properties to create a postData object and it becomes easier to validate domain data.
 
 ...
 
