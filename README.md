@@ -882,7 +882,7 @@ Managing DataModels on the client-side is a good idea for several reasons. Not o
 
 There are at least 3 reasons why you should consider creating and maintaining client-side DataModels. 
 
-1 **DataModels promote code re-use**: Any application that is focused on code quality should focus on code re-use. Clever architectual front-end design patterns that promote code re-use should be implemented as much as possible.
+1. **DataModels promote code re-use**: Any application that is focused on code quality should focus on code re-use. Clever architectual front-end design patterns that promote code re-use should be implemented as much as possible.
 ...
 
 ## things to write about in next update
