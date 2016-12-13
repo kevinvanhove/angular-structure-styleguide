@@ -880,7 +880,7 @@ Separating both DataModel and ViewModel allows for **better management** of data
 ### Create and maintain client-side DataModels
 Managing DataModels on the client-side is a good idea for several reasons. Not only does it fit well with the **single responsibility principle** it also further improves code cohesion by **loose coupling** the DataModel from the controller.
 
-A DataModel is a simple angular factory that returns a ´´constructor function´´ that you call with the ´´new´´ keyword. This creates a new object with the properties defined in the factory.
+A DataModel is a simple angular factory that returns a `constructor function` that you call with the `new` keyword. This creates a new object with the properties defined in the factory.
 
 ##### Example of a client-side DataModel
 ```javascript
