@@ -937,7 +937,7 @@ A DataModel is a simple angular factory that returns a `constructor function` th
 
 ```javascript
       //assign a customer $resource object to Customer
-      Customer = new customerResource();
+      Customer = customerResource();
 ```
 
 ```javascript
