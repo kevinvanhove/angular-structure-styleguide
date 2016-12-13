@@ -931,6 +931,7 @@ A DataModel is a simple angular factory that returns a `constructor function` th
 2. **DataModels improve accuracy**: There is a strong relationship with the properties that the backend expects and the properties the frontend supplies. This 'contract' between both parties reduces confusion and improves communications between developers.
 3. **DataModels can supply defaults**: The constructor function of the DataModel can be set with default values that the view may need. You can even supply different default values, based on some conditional.
 
+### 3. Manage RESTful resources using the $resource service
 ...
 
 ## things to write about in next update
