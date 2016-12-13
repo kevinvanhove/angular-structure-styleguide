@@ -896,12 +896,12 @@ Managing DataModels on the client-side is a good idea for several reasons. Not o
 
     angular.module('models').factory('models.bankaccount.iban', fctr);
 
-    fctr.$inject = ['models.bancaccount.bic'];
+    fctr.$inject = [];
 
-    function fctr(bicModel) {
+    function fctr() {
 
       function instance(){
-        this.bic = new bicModel();
+        this.bic = {};
         this.foreign = false;
         this.inUse = true;
         this.accountNumber = '';
