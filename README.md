@@ -985,6 +985,3 @@ A DataModel is a simple angular factory that returns a `constructor function` th
 ```
 
 
-## things to write about in next update
-* datamodel solutions
-* naming conventions
