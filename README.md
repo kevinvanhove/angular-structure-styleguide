@@ -880,8 +880,7 @@ Separating both DataModel and ViewModel allows for **better management** of data
 ### Create and maintain client-side DataModels
 Managing DataModels on the client-side is a good idea for several reasons. Not only does it fit well with the **single responsibility principle** it also further improves code cohesion by **loose coupling** the DataModel from the controller.
 
-**Example of a client-side DataModel**
-
+##### Example of a client-side DataModel
 The DataModel factory returns a ´´constructor function´´ that you call with the ´´new´´ keyword:
 
 ```javascript
