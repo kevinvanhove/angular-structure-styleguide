@@ -7,7 +7,7 @@ A style guide for structuring angular applications
 4. [Architecture of a component](#architecture_of_a_component)
 5. [Component communications](#component_communications)
 6. [Directory structure](#directory_structure)
-7. [Datmodel solutions](#datamodel_solutions)
+7. [Datamodel solutions](#datamodel_solutions)
 
 <a name="quick_intro"></a>
 ## Quick intro
