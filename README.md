@@ -878,7 +878,11 @@ To separate the DataModel from the ViewModel we attach the domain data to the `$
 Separating both DataModel and ViewModel allows for **better management** of data flows within the component view. There is no need to collect properties to create a postData object and it becomes easier to validate domain data.
 
 ### Create and maintain client-side DataModels
+Managing DataModels on the client-side is a good idea for several reasons. Not only does it fit well with the **single responsibility principle** it also further improves code cohesion by **loose coupling** the DataModel from the controller.
 
+There are at least 3 reasons why you should consider creating and maintaining client-side DataModels. 
+
+1 **DataModels promote code re-use**: Any application that is focused on code quality should focus on code re-use. Clever architectual front-end design patterns that promote code re-use should be implemented as much as possible.
 ...
 
 ## things to write about in next update
