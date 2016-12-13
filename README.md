@@ -887,7 +887,7 @@ Managing DataModels on the client-side is a good idea for several reasons. Not o
  * @ngdoc factory
  * @name models.factory:models.bankaccount.iban
  *
- * @description DataModel for an iban backaccount
+ * @description DataModel for an iban bankaccount
  *
  */
 
