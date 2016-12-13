@@ -875,7 +875,7 @@ To separate the DataModel from the ViewModel we attach the domain data to the `$
 <input ng-model="$ctrl.data.age"> <!--form data-->
 ```
 
-Separating both DataModel and ViewModel allows for better management of data flows within the component view. There is no need to collect properties to create a postData object and it becomes easier to validate domain data.
+Separating both DataModel and ViewModel allows for **better management** of data flows within the component view. There is no need to collect properties to create a postData object and it becomes easier to validate domain data.
 
 ...
 
