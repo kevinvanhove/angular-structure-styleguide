@@ -858,7 +858,7 @@ While this construct of binding everything to 1 object works fine for smaller ap
 * A DataModel
 
 #### The ViewModel
-This model is everything the DataModel is not. In other words, all properties that are not relevant for a backend data store should be considerd the ViewModel. In the above example the controller logic and the event methods are the ViewModel. 
+This model is everything the DataModel is not. In other words, all properties that are **not relevant** for a backend data store should be considerd the ViewModel. In the above example the controller logic and the event methods are the ViewModel. 
 
 The ViewModel is attached directly to the `$ctrl` object.
 ``` html
