@@ -823,15 +823,15 @@ app/components/video/video-of-book/models/for-print/print.model.js
 ## Datamodel solutions 
 The lack of structured datamodels and assisted tools can often lead to deficient communication between client and server. In angular there is no concept of a datamodel like in EmberJS or BackboneJS. To solve this we need to consider 3 actions:
 
-* Separate the DataModel from ViewModel
-* Create and maintain client-side DataModels
-* Manage RESTful resources using the $resource service
+1. Separate the DataModel from ViewModel
+2. Create and maintain client-side DataModels
+3. Manage RESTful resources using the $resource service
 
 **Conceptual overview of the proposed solution**
 
 <img src="https://raw.githubusercontent.com/kevinvanhove/angular-structure-styleguide/master/documentation/angular-datamodel.png" width="376">
 
-### Separate DataModel from ViewModel
+### 1. Separate DataModel from ViewModel
 There is a lot of movement in an angular component view. We have **Controller logic** which manages controller and UI state, **event methods** that call functions in our controller and **form data** like input fields and checkboxes.
 
 Angular makes no assumptions about these data flow types and binds everything to one controller scope object, in a component based architecture this defaults to the `$ctrl` object.
@@ -877,7 +877,7 @@ To separate the DataModel from the ViewModel we attach the domain data to the `$
 
 Separating both DataModel and ViewModel allows for **better management** of data flows within the component view. There is no need to collect properties to create a postData object and it becomes easier to validate domain data.
 
-### Create and maintain client-side DataModels
+### 2. Create and maintain client-side DataModels
 Managing DataModels on the client-side is a good idea for several reasons. Not only does it fit well with the **single responsibility principle** it also further improves code cohesion by **loose coupling** the DataModel from the controller.
 
 A DataModel is a simple angular factory that returns a `constructor function` that you call with the `new` keyword. This creates a new object with the properties defined in the factory.
