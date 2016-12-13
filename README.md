@@ -934,6 +934,44 @@ A DataModel is a simple angular factory that returns a `constructor function` th
 ### 3. Manage RESTful resources using the $resource service
 ...
 
+```javascript
+      //here you create a new customer
+      $ctrl.data = new Customer(new customerModel());
+
+      //the customerModel properties are now available in the view using the DataModel $ctrl.data
+      $ctrl.data.name = 'Kevin Vanhove';
+
+      //when ready, add the customer to the data store using $ctrl.data.$put()
+      $ctrl.data.$put();
+```
+
+```javascript
+      //here you change a customer
+      $ctrl.data  = Customer.get({id:'27'}, function(){
+
+        //The customer properties are available in the view using the callback
+        $ctrl.data.name = 'David';
+
+        //when ready, execute a POST using $ctrl.data.$save()
+        $ctrl.data.$save()
+
+      });
+```
+
+```javascript
+    var $ctrl = this;
+        //here you delete a customer
+      $ctrl.data  = Customer.get({id:'27'}, function(){
+
+        $ctrl.data.$delete();
+
+      });
+
+      //or use the Customer resource directly without a callback
+      Customer.delete({id:'27'});
+```
+
+
 ## things to write about in next update
 * datamodel solutions
 * naming conventions
