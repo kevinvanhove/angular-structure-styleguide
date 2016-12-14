@@ -1,5 +1,5 @@
 # Angular Structure Guide
-A style guide for structuring angular applications
+A style guide for structuring big angular applications
 
 1. [Quick intro](#quick_intro)
 2. [Angular development strategies](#angular_development_strategies)
