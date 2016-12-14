@@ -938,7 +938,9 @@ Managing our resources with the $resource service has several benefits:
 * **Allows for backend interactions with an Active Record like pattern**: The $resource service returns a resource object extended with methods like `.$save()` and `.$delete()`. Posting an object to the server can be as simple as `$ctrl.data.$save()`.
 * **Instantiate $resource objects with DataModels**: we can use our DataModels to instantiate new resource objects, effectively extending a DataModel with resource methods like `.$save()`.
 
-#### Create resources using a factory
+Below are some examples on how to implement the $resource service:
+
+#### Declare and return a $resource service using an angular factory
 ```javascript
       //the customerResource declaration returning the $resource service
       return $resource(baseRestPath + 'customer/:id/', {id:'@id'}, {
