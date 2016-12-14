@@ -938,25 +938,28 @@ Managing our resources with the $resource service has several benefits:
 * **Allows for backend interactions with an Active Record like pattern**: The $resource service returns a resource object extended with methods like `.$save()` and `.$delete()`. Posting an object to the server can be as simple as `$ctrl.data.$save()`.
 * **Instantiate $resource objects with DataModels**: we can use our DataModels to instantiate new resource objects, effectively extending a DataModel with resource methods like `.$save()`.
 
+#### Create resources using a factory
 ```javascript
-      //the customer $resource declaration, put this in a factory
+      //the customerResource declaration returning the $resource service
       return $resource(baseRestPath + 'customer/:id/', {id:'@id'}, {
         'put': {method:'PUT'}
       })
 
 ```
 
+#### DI the factory in the component controller and assign to a global variable
 ```javascript
       //assign a customer $resource object to Customer
       Customer = customerResource();
 ```
 
-
+#### GET a resource from the server assign it to $ctrl.data
 ```javascript
       //here you get a customer, the view will update when the server returns the customer
        $ctrl.data  = Customer.get({id:'27'});
 ```
 
+#### PUT a new customer, instantiate using our DataModels
 ```javascript
       //here you create a new customer based on the properties in DataModel customerModel()
       $ctrl.data = new Customer(new customerModel());
@@ -968,6 +971,7 @@ Managing our resources with the $resource service has several benefits:
       $ctrl.data.$put();
 ```
 
+#### POST a customer using .$save() 
 ```javascript
       //here you change a customer
       $ctrl.data  = Customer.get({id:'27'}, function(){
@@ -981,6 +985,7 @@ Managing our resources with the $resource service has several benefits:
       });
 ```
 
+#### DELETE a customer 
 ```javascript
       //here you delete a customer
       $ctrl.data  = Customer.get({id:'27'}, function(){
