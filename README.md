@@ -932,8 +932,11 @@ A DataModel is a simple angular factory that returns a `constructor function` th
 3. **DataModels can supply defaults**: The constructor function of the DataModel can be set with default values that the view may need. You can even supply different default values, based on some conditional.
 
 ### 3. Manage RESTful resources using the $resource service
-...
+Managing our resources with the $resource service has several benefits:
 
+* **Forces backends to adhere to RESTful API design principles**: poorly implemented RESTful API designs will not work great with the $resource service because you will end up adding more custom actions then necessarily. Thourough API planning between frontend and backend teams is therefore inevitable.
+* **Allows for backend interactions with an Active Record like pattern**: The $resource service returns a resource object extended with methods like `.$save()` and `.$delete()`. Posting an object to the server can be as simple as `$ctrl.data.$save()`.
+* **Instantiate $resource objects with DataModels**: we can use our DataModels to instantiate new resource objects, effectively extending a DataModel with resource methods like `.$save()`.
 
 ```javascript
       //the customer $resource declaration, put this in a factory
