@@ -969,7 +969,7 @@ A DataModel is a simple angular factory that returns a `constructor function` th
       //here you change a customer
       $ctrl.data  = Customer.get({id:'27'}, function(){
 
-        //The customer properties are available in the view using the callback
+        //The customer properties are available in the controller using the callback
         $ctrl.data.name = 'David';
 
         //when ready, execute a POST using $ctrl.data.$save()
