@@ -948,6 +948,12 @@ A DataModel is a simple angular factory that returns a `constructor function` th
       Customer = customerResource();
 ```
 
+
+```javascript
+      //here you get a customer, the view will update when the server returns the customer
+       $ctrl.data  = Customer.get({id:'27'});
+```
+
 ```javascript
       //here you create a new customer based on the properties in DataModel customerModel()
       $ctrl.data = new Customer(new customerModel());
