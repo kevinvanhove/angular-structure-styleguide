@@ -1,4 +1,4 @@
-# Angular 1.x Structure Guide
+# Angular 1 Structure Guide
 A style guide for structuring big angular 1.x applications
 
 1. [Quick intro](#quick_intro)
