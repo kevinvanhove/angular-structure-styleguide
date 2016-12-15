@@ -945,7 +945,7 @@ A RESTful resource is usually constructed in this format:
 /collection/id/collection/id?metadata
 ```
 
-This is a format that works very well with the angular $resource service and can have several benefits:
+This is a format that works very well with the angular [$resource service](https://docs.angularjs.org/api/ngResource/service/$resource)  and can have several benefits:
 
 * **Forces backends to adhere to RESTful API design principles**: poorly implemented RESTful API designs will not work great with the $resource service because you will end up adding more custom actions then necessarily. Thourough API planning between frontend and backend teams is therefore inevitable.
 * **Allows for backend interactions with an Active Record like pattern**: The $resource service returns a resource object extended with methods like `.$save()` and `.$delete()`. Posting an object to the server can be as simple as `$ctrl.data.$save()`.
