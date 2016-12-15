@@ -947,7 +947,7 @@ A RESTful resource is usually constructed in this format:
 
 This is a format that works very well with the angular [$resource service](https://docs.angularjs.org/api/ngResource/service/$resource)  and can have several benefits:
 
-* **Forces backends to adhere to RESTful API design principles**: poorly implemented RESTful API designs will not work great with the $resource service because you will end up adding more custom actions then necessarily. Thourough API planning between frontend and backend teams is therefore inevitable.
+* **Forces backends to adhere to RESTful API design principles**: poorly implemented RESTful API designs will not work great with the $resource service because you will end up adding more custom actions then necessarily. Thourough [API planning](http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api) between frontend and backend teams is therefore inevitable.
 * **Allows for backend interactions with an Active Record like pattern**: The $resource service returns a resource object extended with methods like `.$save()` and `.$delete()`. Posting an object to the server can be as simple as `$ctrl.data.$save()`.
 * **Instantiate $resource objects with DataModels**: we can use our DataModels to instantiate new resource objects, effectively extending a DataModel with resource methods like `.$save()`.
 
