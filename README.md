@@ -928,7 +928,7 @@ A DataModel is a simple angular factory that returns a `constructor function` th
 #### Benefits
 
 1. **DataModels promote code re-use**: Any application that is focused on code quality should focus on code re-use. Clever architectual front-end design patterns that promote code re-use should be implemented as much as possible.
-2. **DataModels improve accuracy**: There is a strong relationship with the properties that the backend expects and the properties the frontend supplies. This 'contract' between both parties reduces confusion and improves communications between developers.
+2. **DataModels improve accuracy**: There is a strong relationship with the properties that the backend expects and the properties the frontend supplies. This 'contract' between both parties reduces confusion and improves communications between developers. Check out [GraphQL](http://graphql.org/), a query language for API's that take the concepts of a client side datamodel further and implements it as a query language.
 3. **DataModels can supply defaults**: The constructor function of the DataModel can be set with default values that the view may need. You can even supply different default values, based on some conditional.
 
 ### 3. Manage RESTful resources using the $resource service
