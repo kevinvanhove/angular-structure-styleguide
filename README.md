@@ -101,15 +101,11 @@ The view 'homepage.html' loads the controllers using ng-controller.
 <div ng-controller="homepageCtr as homeCtrl">
 
 	<div ng-controller="whatIsNewCtrl as newCtrl">
-
 		<!--some html code-->
-
 	</div>
 
 	<div ng-controller="TakeTheTourCtrl as tourCtrl">
-
 		<!--some html code-->
-
 	</div>
 
 </div>
@@ -173,14 +169,10 @@ A template contains normal html code but also other directives/components
 
 	<div class="row">
 		<div class="left">
-			
 			<what-is-new></what-is-new>
-			
 		</div>
 		<div class="right">
-			
 			<take-the-tour></take-the-tour>
-			
 		</div>
 	</div>
 
@@ -209,9 +201,7 @@ The directive/component definition attaches the controller and template to the h
 		};
 
 		function controller() {
-
 			//directive code
-
 		}
 
 	}
@@ -249,30 +239,23 @@ Your application should have only 1 local component tree starting with the root 
 
 ```html
 <app> //local
-
     <homepage> //local
-
         <book> //local
             <homepage-book-try></homepage-book-try> //local
             <homepage-book-buy> //local
                 <buy-form></buy-form> //global
             </homepage-book-buy>
         </book>
-
         <videos> //local
             <homepage-videos-trailer> //local
                 <video-of-book></video-of-book> //global
             </homepage-videos-trailer> //local
             <homepage-videos-list></homepage-videos-list> //local
         </videos>
-
     </homepage>
-    
     <contact> //local
         <buy-form></buy-form> //global
     </contact>
-
-    
 </app>
 ```
 
@@ -331,11 +314,9 @@ A component consists of 2 main parts, the **documentation** and the **implementa
 
     function setupVideo(){}
     function getPreferences(){}
-
     function loadListOfVideos(){}
     function prepareList(){}
     function checkAudioQuality(){}
-
     function pauzeVideo(){}
     function nextVideo(){}
 
@@ -442,10 +423,8 @@ Assign business logic functions to the **public template pointers**, as seen bel
 
 ```javascript
   function controller(){
-
     $ctrl.ui.pauze = pauzeVideo;
     $ctrl.ui.next = nextVideo;
-
   }
 ```
 ```html
@@ -472,11 +451,9 @@ Adopt simple **functional programming styles**. Always be on the lookout for cre
 
     function setupVideo(){}
     function getPreferences(){}
-
     function loadListOfVideos(){}
     function prepareList(){}
     function checkAudioQuality(){}
-
     function pauzeVideo(){}
     function nextVideo(){}
 
@@ -536,14 +513,10 @@ Exposing the api methods, `addWatchedBook()` and `getWatchedBooks()` on the cont
     /****************************************************************/
 
     function addWatchedBook(bookName){
-
       booksWatched.push(bookName);
-
     }
     function getWatchedBooks(){
-
       return booksWatched;
-
     }
 
   }
@@ -590,9 +563,7 @@ Require the `<app>` component using `require:{api: '^app'}`, this binds the comp
     }
 
     function addThisBook(){
-
       $ctrl.api.addWatchedBook('ES6 - The Essentials');
-
     }
 
   }
@@ -640,7 +611,6 @@ The `<buy-form>`component also requires the `<app>` component and gets the list 
     function getWatchedBooks(){
       $ctrl.booksWatched = $ctrl.api.getWatchedBooks();
     }
-
 
   }
 
@@ -1004,9 +974,7 @@ Below are some examples on how to implement the $resource service:
 ```javascript
       //here you delete a customer
       $ctrl.data  = Customer.get({id:'27'}, function(){
-
         $ctrl.data.$delete();
-
       });
 
       //or use the Customer resource directly without a callback
